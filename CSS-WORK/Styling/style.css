@@ -1,0 +1,40 @@
+h1{
+background-color: black;
+padding: 10px;
+margin-bottom: -25px;
+}
+
+.word{
+    color:whitesmoke;
+    font-size: 75px;
+
+}
+
+#cloud{
+    color:aqua;
+}
+
+h2{
+   background-color: purple;
+   padding: 7px; 
+   margin-bottom: -15px;
+}
+
+.proj{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}
+
+h3{
+    background-color: lightblue;
+    padding: 7px;
+}
+
+.contact{
+    color: black;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 200;
+}

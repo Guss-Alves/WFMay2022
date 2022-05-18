@@ -3,7 +3,6 @@ button{
     display: block;
     margin-top: 30px;
     margin-left: 70px;
-
 }
 .search{
     color:aqua;
@@ -16,7 +15,7 @@ button{
     color:white;
     background-color: rgb(18, 222, 222);
     border-color: rgb(18, 222, 222);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .account{
     color: white;

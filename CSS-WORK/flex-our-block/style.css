@@ -13,13 +13,15 @@
     height: 300px;
     width: 200px;
     background-color: blue;
-    margin-right: 30px;
+    margin-right: 25px;
     margin-left: 10px;
 }
 .main {
     height: 400px;
     width: 700px;
     background-color: red;
+    margin-right: 15px;
+    padding: 5px;
 }
 .sub-content {
     height: 200px;
@@ -29,7 +31,7 @@
 
 }
 #advertisement {
-    height: 120px;
+    height: 100px;
     width: 640px;
     background-color: purple;
     margin-left: 30px;

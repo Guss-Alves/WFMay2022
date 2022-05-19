@@ -1,0 +1,33 @@
+.nav{
+    display: flex;
+    width: 70%;
+    height: 70px;
+    background-color: rgb(192, 185, 185);
+    justify-content:space-between;
+
+}
+.nav-title{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+.nav-links{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.btn{
+    width: 90px;
+    padding: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color:aqua;
+}
+li:hover {
+background-color:white
+
+}

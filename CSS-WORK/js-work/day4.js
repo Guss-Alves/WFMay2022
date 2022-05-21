@@ -8,7 +8,6 @@
 // setX(15);
 // console.log(x);
 
-// second
 // var x = 5;
     
 // function addToX(amount) {
@@ -21,7 +20,7 @@
 // console.log(result);
 // console.log(x);
 
-// third
+
 function isPal(arr) {;
     for(var left=0; left<arr.length/2; left++) {
         var right = arr.length-1-left;

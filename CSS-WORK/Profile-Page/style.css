@@ -216,7 +216,7 @@ border: 3px solid lightgray;
 .div2-names{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     position: absolute;
     bottom: 37px;
     left: 136px;

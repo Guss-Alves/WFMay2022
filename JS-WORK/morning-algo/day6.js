@@ -1,13 +1,16 @@
 // function d6() {
+//     var roll= Math.floor(6 * Math.random());
+//     return roll;
+//     // or can also be -->
 //     var roll = Math.random();
-//             roll*=6
-//             roll+=1
-//             roll=Math.floor(roll)
+//     roll*=6
+//     roll+=1
+//     roll=Math.floor(roll)
 //     return roll;
 // }
-    
 // var playerRoll = d6();
 // console.log("The player rolled: " + playerRoll);
+    
 
 var lifesAnswers = [
     "It is certain.",
@@ -31,3 +34,13 @@ var lifesAnswers = [
     "Outlook not so good.",
     "Very doubtful."
 ];
+function pick(arr){
+    var i = Math.floor(lifesAnswers.length * Math.random());
+    return arr[i];
+}
+function Answer(){
+    console.log(pick(lifesAnswers));
+}
+Answer();
+
+

@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+button{
+    margin: 40px;
+    padding: 40px;
+    font-size: 25px;
+}
+
+.shadow{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    background-color: aqua;
+    box-shadow: 5px 5px 5px red;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+}

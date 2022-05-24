@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    margin-left: 50px;
+    width: 800px;
+    height: 45px;
+    background-color: black;
+}
+.nav > h1{
+    margin-left: 10px;
+    color: white;
+}
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 50px;
+    width: 800px;
+    height: 425px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid black;
+}
+.user{
+    margin-top: 10px;
+    margin-left: 58px;
+    margin-right: 26px;
+    display: inline-block;
+    height: 230px;
+    border: 2px solid black;
+    /* background-color: brown; */
+}
+.user > img{
+    height: 100px;
+    padding: 30px;
+}
+.user > h3, p{
+    padding-left: 37px;
+    padding-bottom: 10px;
+}
+.right-content{
+    display: inline-block;
+}
+.box1, .box2, .box3{
+    height: 60px;
+    width: 523px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.top1 > h2{
+    display: inline-block;
+    margin-right: 285px;
+    margin-left: 20px;
+}
+.top1 > button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 15px;
+    background-color: yellow;
+    width: 60px;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+.foot1{
+    margin-top: 10px;
+}
+.top2 > h2{
+    display: inline-block;
+    margin-right: 244px;
+    margin-left: 20px;
+}
+.top2 > button{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        font-size: 15px;
+        background-color: yellow;
+        width: 60px;
+        box-shadow: 3px 3px 3px black;
+        cursor: pointer;
+    }

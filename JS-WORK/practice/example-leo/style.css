@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 50px;
+    height: 670px;
+    width: 900px;
+    background-color: bisque;
+}
+.nav{
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+.up{
+    display: flex;
+    height: 426px;
+    width: 100%;
+    background-color: brown;
+}
+.user{
+    height: 415px;
+    margin-right: 20px;
+    width: 504px;
+    background-color: blueviolet;
+}
+.connection{
+    height: 240px;
+    width: 376px;
+    background-color: chartreuse;
+}
+.down{
+    display: flex;
+    width: 100%;
+    height: 163px;
+    background-color: blue;
+}
+.education{
+    height: 156px;
+    width: 504px;
+    margin-right: 20px;
+    background-color: coral;
+}
+.your{
+    position: relative;
+    bottom: 131px;
+    height: 287px;
+    width: 376px;
+    background-color: crimson;
+}

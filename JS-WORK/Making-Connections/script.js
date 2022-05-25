@@ -1,11 +1,11 @@
 console.log("page loaded...");
 
-var count = 'Jane Doe';
-var countElement = document.querySelector('#count');
-console.log(countElement);
+// var count = 'Jane Doe';
+var count = document.querySelector('#count');
+console.log(count);
 
 function addName(){
-    countElement.innerText = 'Gustavo Alves';
+    count.innerText = 'Gustavo Alves';
     console.log(count);
 }
 

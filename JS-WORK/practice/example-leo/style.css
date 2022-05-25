@@ -6,7 +6,7 @@
     margin: 50px;
     height: 670px;
     width: 900px;
-    background-color: bisque;
+    outline: 1px solid red;
 }
 .nav{
     background-color: aqua;
@@ -15,9 +15,10 @@
 }
 .up{
     display: flex;
+    margin-top: 10px;
     height: 426px;
     width: 100%;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .user{
     height: 415px;
@@ -25,27 +26,31 @@
     width: 504px;
     background-color: blueviolet;
 }
+.col-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 533px;
+    width: 338px;
+    /* background-color: chartreuse; */
+}
 .connection{
-    height: 240px;
-    width: 376px;
-    background-color: chartreuse;
+    height: 170px;
+    background-color: crimson;
+}
+.your{
+    height: 330px;
+    background-color: black;
 }
 .down{
     display: flex;
     width: 100%;
     height: 163px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .education{
-    height: 156px;
+    height: 134px;
     width: 504px;
     margin-right: 20px;
     background-color: coral;
-}
-.your{
-    position: relative;
-    bottom: 131px;
-    height: 287px;
-    width: 376px;
-    background-color: crimson;
 }

@@ -24,6 +24,14 @@ function flatten(arr2d) {
     var flat = [];
     flat = (arr2d.flat());
     return flat;
-}
+    }
 var result = flatten( [ [2, 5, 8], [3, 6, 1], [5, 7, 7] ] );
 console.log(result); // we expect to get back [2, 5, 8, 3, 6, 1, 5, 7, 7]
+
+
+// another way of solving and flatting the array
+// for(var i = 0; i < arr2d.lenght; i++) {
+//     for( var j = 0; j < arr2d[i].length; j++) {
+//         flat.push(arr2d[i][j]);
+//     }
+// }

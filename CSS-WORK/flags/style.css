@@ -1,10 +1,11 @@
+/* italy flag */
 .container{
     display: flex;
-    height: 50px;
-    width: 90px;
-    margin-left: 25%;
+    height: 120px;
+    width: 200px;
     justify-content: flex-end;
-    border: 2px solid black;
+    margin-bottom: 30px;
+    border: 1px solid black;
 }
 .green{
     color: green;
@@ -19,5 +20,33 @@
     background-color: red;
 }
 .red, .green, .white{
+    flex: 1; 
+}
+/* sri lanka flag */
+.main{
+    display: flex;
+    padding: 8px;
+    height: 85px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.left{
+    display: flex;
+    height: 85px;
+    width: 100px;
+    margin-right: 10px;
+    background-color: aqua;
+}
+.green2{
     flex: 1;
+    background-color: green;
+}
+.orange{
+    flex: 1;
+    background-color: orange;
+}
+
+img{
+    height: 85px;
 }

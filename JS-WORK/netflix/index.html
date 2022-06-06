@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body light">
+    <div class="nav">
+        <div class="logo">
+            <h1 onclick="bye()">NETFLIX</h1>
+            <span>TV Shows</span>
+            <span>Movies</span>
+            <span>Recently Added</span>
+            <span>My List<span class="number">0</span></span>
+        </div>
+        <div class="search">
+            <img src="img/search-light.png" alt="search img">
+        </div>
+    </div>
+    <div class="display" id="puf">
+        <div class="title">
+            <h3>Popular on Netflix</h3>
+        </div>
+        <div class="series">
+            <img onclick="pickOne()"  class="arrow" src="img/chevron-left.png" alt="arrow chevron-left">
+            <img onclick="alert('Soon only in Netflix')" class="img-banner" src="img/strange4.jpeg" alt="strange things">
+            <img onclick="pickTwo()" class="arrow rotate" src="img/chevron-left.png" alt="arrow chevron-right">
+        </div>
+    </div>
+    <div class="watching">
+        <div class="movies">
+            <h2>Continue Watching for Gustavo</h2>
+            <img onclick="add1()" class="to-watch" src="img/witcher.jpg" alt="serie">
+            <img onclick="add1()" class="to-watch" src="img/lucifer.webp" alt="serie2">
+            <img onclick="add1()" class="to-watch" src="img/Squid_Game.jpg" alt="serie3">
+            <img onclick="add1()" class="to-watch" src="img/breaking-bad.jpg" alt="serie4">
+        </div>
+    </div>
+    <div class="watching-2">
+        <div class="animes">
+            <h2>Popular Animes</h2>
+            <img class="to-anime" src="img/attack-on-titan.jpg" alt="anime">
+            <img class="to-anime" src="img/one-punch.jpg" alt="anime">
+            <img class="to-anime" src="img/naruto.jpg" alt="narutin">
+            <img class="to-anime" src="img/promise-land.jpg" alt="anime">
+            <img class="to-anime" src="img/kakegurui.jpg" alt="anime">
+            <img class="to-anime" src="img/ONEPIECE.jpg" alt="luffy">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

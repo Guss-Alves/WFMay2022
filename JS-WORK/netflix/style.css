@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: black;
+}
+/* navbar CSS starts here */
+.nav{
+    z-index: 2;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 72em;
+    height: inherit;
+}
+.logo > h1{
+    color: rgb(225, 13, 13);
+    font-size: 3em;
+    cursor: pointer;
+}
+h1:hover{
+    color: red;
+}
+.logo > span{
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+.number{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.search{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100px;
+    cursor: pointer;
+}
+/* display CSS starts here */
+.title{
+    display: flex;
+    justify-content: flex-end;
+    width: 24em;
+    padding-top: 120px;
+}
+.title > h3{
+    color: white;
+}
+.series{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+}
+.arrow{
+    filter: invert(1);
+    height: 100px;
+    cursor: pointer;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.img-banner{
+    cursor: pointer;
+    width: 90em;
+    height: 500px;
+}
+/* watching list CSS starts here */
+.watching{
+    height: 320px;
+    padding-top: 90px;
+}
+.movies{
+    height: inherit;
+    margin-left: 64px;;
+}
+.movies, .animes > h2{
+    color: white;
+}
+.to-watch{
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 250px;
+    cursor: pointer;
+}
+.to-watch:hover, .to-anime:hover{
+    border: 1px solid white;
+}
+/* animes CSS starts here */
+.watching-2{
+    height: 300px;
+}
+.animes{
+    margin-left: 64px;
+}
+.to-anime{
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 161px;
+    cursor: pointer;
+}

@@ -45,4 +45,18 @@ print(str(res))
 res = list(map(itemgetter('last_name'), students))
 print(str(res))
 
-#  i could find a way of getting the values with itemgetter method upon online search, but now sure hoe to do with a function :(
+#  i could find a way of getting the values with itemgetter method upon online search, but not sure how to do with a function :(
+
+# 4
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+def printinfo(some_dict):
+    for key, values in some_dict.items():
+        print(len(values),key)
+        if(isinstance(values, list)):
+            for value in values:
+                print(value)
+print(printinfo(dojo))
+# I was able to find a way of doing it searching online, and fit it in the desireble function, have a few questions about the if statement and how thats playing out, but is working 

@@ -22,17 +22,32 @@ class BankAccount:
             print(f"insufficient fund:{self.balance}")
         return self
 
-    def display_account_info(self):
-        print(f"balance :{self.balance}")
-        return self
-
     def yield_interest(self):
         if(self.balance) > 0:
             self.balance += self.balance * self.int_rate
             return self
 
-account1 = BankAccount(0.01, 0)
-account2 = BankAccount(0.05, 0)
+class User:
 
-account1.deposit(1000).deposit(60).deposit(50).withdraw(200).yield_interest().display_account_info()
-account2.deposit(10000).deposit(1000).withdraw(200).withdraw(200).yield_interest().display_account_info().display_all_bank_accounts()
+    def __init__(self, name, int_rate, balance):
+        self.name = name
+        self.account = BankAccount(int_rate = balance, balance= balance)
+
+    def make_deposit(self, amount):
+        self.account.deposit(amount)
+        return self
+
+    def make_withdrawal(self, amount):
+        self.account.withdraw(amount)
+        return self
+
+    def display_user_balance(self):
+        print(f"{self.name}, Balance : {self.account.balance}")
+        return self
+
+gustavo = User('Gustavo Alves', 0.01, 10)
+leo = User('leo Silva', 0.04, 100)
+
+gustavo.make_deposit(100).make_deposit(1000).make_withdrawal(200).account.yield_interest()
+gustavo.display_user_balance()
+leo.make_deposit(130).make_deposit(200).make_deposit(40).display_user_balance()

@@ -31,7 +31,7 @@ class User:
 
     def __init__(self, name, int_rate, balance):
         self.name = name
-        self.account = BankAccount(int_rate = balance, balance= balance)
+        self.account = BankAccount(int_rate = int_rate, balance= balance)
 
     def make_deposit(self, amount):
         self.account.deposit(amount)

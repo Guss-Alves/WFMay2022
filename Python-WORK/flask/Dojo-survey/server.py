@@ -7,15 +7,16 @@ def first():
     return render_template('index.html')
 
 @app.route('/result', methods=['POST'])
-def survey_resut():
-    print(request.form)
+def survey_result():
+    session['name'] = request.form['name']
+    session['city'] = request.form['city']
+    session['language'] = request.form['language']
+    session['comment'] = request.form['comment']
+    return redirect('/answer')
 
-    return render_template ('result.html',
-        name = request.form['name'],
-        city = request.form['city'],
-        language = request.form['language'],
-        comment = request.form['comment']
-    )
+@app.route('/answer')
+def final():
+    return render_template('result.html')
 
 if __name__=="__main__":
     app.run(debug=True)

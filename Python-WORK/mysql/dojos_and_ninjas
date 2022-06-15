@@ -1,0 +1,28 @@
+SELECT * FROM dojos;
+INSERT INTO dojos (name) VALUES('Coding');
+INSERT INTO dojos (name) VALUES('Middle School');
+INSERT INTO dojos (name) VALUES('High School');
+
+DELETE FROM dojos WHERE id = 5;
+DELETE FROM dojos WHERE id = 4;
+DELETE FROM dojos WHERE id = 3;
+DELETE FROM dojos WHERE id = 2;
+DELETE FROM dojos WHERE id = 1;
+
+INSERT INTO dojos (name) VALUES('Bootcamp');
+INSERT INTO dojos (name) VALUES('Santa Clara');
+INSERT INTO dojos (name) VALUES('High School');
+
+SELECT * FROM ninjas;
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUES ('Gustavo', 'Alves', 20, 7);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUES ('Alex', 'Muller', 18, 7);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUES ('Leo', 'Muller', 21, 7);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUES ('Manuel', 'Smith', 20, 8),
+																('Lara', 'Sander', 22, 8),
+                                                                ('Mia', 'Malu', 18, 8);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUES ('Tuli', 'CO', 20, 9),
+																('Sasa', 'Sander', 22, 9),
+                                                                ('Menner', 'Silva', 18, 9);
+
+SELECT * FROM ninjas WHERE dojo_id = 7;
+SELECT * FROM ninjas WHERE dojo_id = 9;

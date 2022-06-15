@@ -1,0 +1,37 @@
+-- 1
+SELECT * FROM world.languages;
+SELECT languages.language, countries.name, languages.percentage
+FROM languages
+JOIN countries ON language.country_id = countries.id
+WHERE languages.language = 'Slovene';
+
+-- 3
+SELECT cities.name, cities.population, countries.id
+FROM cities 
+JOIN countries ON cities.country_id = countries.id
+WHERE cities.country_id = 136 AND cities.population > 500000
+
+-- 4
+SELECT countries.name, languages.language, languages.percentage
+FROM languages
+JOIN countries ON languages.country_id = countries.id
+WHERE languages.percentage > 89;
+ORDER BY percentage DESC;
+
+-- 5
+SELECT * FROM world.countries;
+SELECT name, surface_area, population FROM countries
+WHERE surface_area < 501 AND population > 100000;
+
+-- 6
+SELECT name, government_form, capital, life_expectancy
+FROM countries
+WHERE government_form = 'Monarchy' AND capital > 200;
+
+-- 7
+SELECT countries.name, cities.name, cities.district, cities.population
+FROM cities
+JOIN countries ON cities.country_id = countries.id
+WHERE cities.country_id = 9 AND cities.district = 'Buenos Aires' AND cities.population > 500000;
+
+-- couldn't find answer for 2 and 8

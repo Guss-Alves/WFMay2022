@@ -15,6 +15,35 @@ def user_create():
     all_users = User.get_all()
     return redirect('/list')
 
+@app.route('/user/edit/<int:id>')
+def edit(id):
+    data = {
+        "id":id
+    }
+    return render_template('edit.html',user=User.get_one(data))
+
+@app.route('/user/update', methods=['POST'])
+def update():
+    User.update(request.form)
+    print(request.form)
+    return redirect ('/list')
+
+
+@app.route('/user/<int:id>/delete')
+def user_delete(id):
+    User.delete_one({'id':id})
+
+    all_users = User.get_all()
+    return redirect ('/list')
+
+@app.route('/show/<int:id>')
+def user_show(id):
+    user = User.show_one({'id':id})
+    print(user)
+
+    all_users = User.get_all()
+    return render_template ('show.html', user = user)
+
 @app.route('/list')
 def user_list():
     all_users = User.get_all()

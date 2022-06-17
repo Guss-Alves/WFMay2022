@@ -25,25 +25,29 @@
         .btn{
             width: 100px;
             padding: 5px;
-            margin-top: 10px;
             background-color: lightgreen;
+            margin-top: 5px;
             cursor: pointer;
-            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
+        }
+        .btn2{
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Add a New User</h1>
-        <form class="box" action="/user/create" method="post">
+        <h1>Edit user {{user.first_name}}</h1>
+        <form class="box" action="/user/update" method="post">
+            <input type="hidden" name="id" value="{{user.id}}"> 
             <label for="first_name">First Name :</label>
-            <input class="box1" type="text" name="first_name" id="first_name">
+            <input class="box1" type="text" name="first_name" id="first_name" value="{{user.first_name}}">
             <label for="last_name">Last Name :</label>
-            <input class="box1" type="text" name="last_name" id="last_name">
+            <input class="box1" type="text" name="last_name" id="last_name" value="{{user.last_name}}">
             <label for="email">email :</label>
-            <input class="box1" type="text" name="email" id="email">
-            <input type="submit" value="submit" class="btn">
-            <a href="/list">Show users list</a>
+            <input class="box1" type="text" name="email" id="email" value="{{user.email}}">
+            <input type="submit" value="update" class="btn">
+            <a href="/reset" class="btn2" >Home</a>
         </form>
     </div>
 </body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show User</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin-top: 40px;
+            height: 280px;
+            width: 600px;
+            margin-left: 100px;
+            padding-left: 10px;
+            border: 1px solid black;
+            background-color: lightgrey;
+        }
+        .container > h2{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn{
+            font-size: 20px;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>User {{user.id}}</h1>
+            <a href="/reset" class="btn">Home</a>
+        </div>
+        <h2>Full name : {{user.first_name}} {{user.last_name}}</h2>
+        <h2>email : {{user.email}}</h2>
+        <h2>Created at : {{user.created_at}}</h2>
+        <h2>Last updated at : {{user.updated_at}}</h2>
+        <a href="/user/edit/{{user.id}}">Edit</a> / <a href="/user/{{user.id}}/delete">Delete</a></td>
+    </div>
+</body>
+</html>

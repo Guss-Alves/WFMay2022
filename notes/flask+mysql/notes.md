@@ -94,3 +94,8 @@
     if __name__ == "__main__":
         app.run(debug=True)
     ```
+
+    - MVC - > Models, Views, Controllers
+    
+    4. File structure
+        - Modularization in the learning plataflorm Flask+mysql (CRUD)

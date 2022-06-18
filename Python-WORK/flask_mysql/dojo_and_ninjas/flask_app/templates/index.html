@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos_and_ninjas</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 17%;
+            border: 1px solid black;
+            width: 900px;
+            height: 500px;
+            padding-left: 20px;
+        }
+        .btn{
+            width: 100px;
+            background-color: lightgreen;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .display_dojos{
+            border: 1px solid black;
+            width: 400px;
+            padding:0 20px 0 20px;
+        }
+        .display_dojos > h1{
+            border-bottom: 1px solid rgb(63, 171, 207);
+        }
+        .list{
+            font-size: 20px;
+        }
+        .new_ninja{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .label{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="new_dojo">
+            <h1>New Dojos</h1>
+            <form action="/dojo/create" method="post">
+                <label class="label" for="name">Name :</label>
+                <input type="text" name="name" id="name">
+                <input type="submit" value="create" class="btn">
+    </div>
+    <div class="display_dojos">
+        <h1>Dojos List :</h1>
+        {% for dojo in all_dojos  %}
+            <a href="/dojo/{{dojo.id}}"><p class="list">{{dojo.name}}</p></a>
+        {% endfor %}
+        <div class="new_ninja">
+            <a href="/ninja/new">ADD A NEW NINJA</a>
+        </div>
+    </div>
+        </form>
+
+    </div>
+</body>
+</html>

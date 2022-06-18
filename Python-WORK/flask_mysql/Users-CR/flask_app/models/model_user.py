@@ -48,5 +48,5 @@ class User:
 
     @classmethod  #show a users information 
     def show_one(cls, data):
-        query = "Select * FROM users WHERE id = %(id)s;"
+        query = "SELECT * FROM users WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)[0]

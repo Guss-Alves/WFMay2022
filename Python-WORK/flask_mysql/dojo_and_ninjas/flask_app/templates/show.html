@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos information</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+    .container{
+        width: 500px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>{{dojo.name}} Ninjas</h1>
+        </div>
+        <div class="ninjas">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">First_Name</th>
+                    <th scope="col">Last_name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for ninja in all_ninjas %}
+                    <tr>
+                        <td>{{ninja.first_name}}</td>
+                        <td>{{ninja.last_name}}</td>
+                        <td>{{ninja.age}}</td>
+                        <td><a class="btn btn-danger" href="/ninja/{{ninja.id}}/delete">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <a href="/reset">HOME</a>
+        </div>
+    </div>
+</body>
+</html>

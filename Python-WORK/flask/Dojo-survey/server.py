@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
+
+from flask_app.models.model_dojo import Dojo
+
 app = Flask(__name__)
 app.secret_key = 'keep it secret, keep it safe'
 
@@ -8,6 +11,7 @@ def first():
 
 @app.route('/result', methods=['POST'])
 def survey_result():
+
     session['name'] = request.form['name']
     session['city'] = request.form['city']
     session['language'] = request.form['language']

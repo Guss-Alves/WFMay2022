@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email validation</title>
+    <style>
+        .container{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .message{
+            background-color: red;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Email</h1>
+        <div class="message">
+            {% with messages = get_flashed_messages() %}<!-- declare a variable called messages -->
+                {% if messages %}<!-- check if there are any messages -->
+                    {% for message in messages %}<!-- loop through the messages -->
+                        <p>{{message}}</p><!-- display each message in a paragraph tag -->
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+
+        <form action="/email/create" method="post">
+            <label for="email">Email :</label>
+            <input type="text" name="email" id="email">
+            <input type="submit" value="create" class="btn">
+        </form>
+    </div>
+</body>
+</html>

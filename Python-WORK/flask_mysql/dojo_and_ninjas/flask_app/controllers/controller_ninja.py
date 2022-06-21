@@ -18,5 +18,5 @@ def ninja_create():
 @app.route('/ninja/<int:id>/delete') #delete a ninja
 def delete_one(id):
     Ninja.delete_one({'id':id})
-    return redirect ('/')
+    return redirect('/')
 

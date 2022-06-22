@@ -2,8 +2,6 @@ from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
 import re
 
-EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
-
 DATABASE = 'email_schema'
 
 class Email:
@@ -33,9 +31,43 @@ class Email:
 
     @staticmethod
     def validate_email(data):
+
+        email_regex = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
+
         is_valid = True
-        if len(data['email']) < 5:
+        if not email_regex.match(data['email']):
             is_valid = False
             flash('Invalid email address')
 
         return is_valid
+
+# VIDEO EXPLAINING THE VALIDATION PROCESS FROM DIFFERENT TYPES OF INPUT (ADVANCED VALIDATION (SPEFICICALY FOR CHOOSING ID 1 TO MANY MINUTE 35:00))
+
+    # other way of doing it without re
+
+#normal validation for VARCHAR
+    #is_valid = True
+
+    #if len(data['email']) < 5:
+    #is_valid =  False
+    #flash('invalid email address')
+
+    #return is_valid
+
+# Salary/number validation
+    #is_valid = True
+    #try:
+        #salary = int(data['salary'])
+        #if salary < 40000 or salary > 200000:
+            #is_valid = False
+            #flash('whatever you want to ')
+    #except:
+        #is_valid = False 
+        #flash('Salary should be a number between 40000 and 200000')
+
+    #return is_valid
+
+#for choosing an ID in a one to many relationship
+    #if data['department_id'] == '-1':
+    #is_valid = False
+    #flash('whatever you want to')

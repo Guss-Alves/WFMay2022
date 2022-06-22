@@ -15,8 +15,8 @@ def ninja_create():
     ninja_id = Ninja.ninja_create(request.form)
     return redirect('/')
 
-@app.route('/ninja/<int:id>/delete') #delete a ninja
-def delete_one(id):
+@app.route('/ninja/<int:id>/<int:dojo_id>/delete') #delete a ninja in a dojo/another id
+def delete_one(id, dojo_id):
     Ninja.delete_one({'id':id})
-    return redirect('/')
+    return redirect(f"/dojo/{dojo_id}")
 

@@ -31,5 +31,3 @@ class Dojo:
     def show_one(cls, data):
         query = "SELECT * FROM dojos WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)[0]
-
-        query = "SELECT * FROM dojos WHERE id = %(id)s;"

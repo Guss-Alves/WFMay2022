@@ -14,6 +14,15 @@
             background-color: red;
             width: 160px;
         }
+        .btn{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .space{
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -30,11 +39,12 @@
         </div>
 
 
-        <form action="/email/create" method="post">
+        <form class="space" action="/email/create" method="post">
             <label for="email">Email :</label>
             <input type="text" name="email" id="email">
             <input type="submit" value="create" class="btn">
         </form>
+        <a class="btn" href="/email/show">See email list</a>
     </div>
 </body>
 </html>

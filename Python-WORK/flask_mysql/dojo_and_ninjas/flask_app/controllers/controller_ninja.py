@@ -5,7 +5,7 @@ from flask import render_template, request, redirect
 from flask_app.models.model_ninja import Ninja
 from flask_app.models.model_dojo import Dojo
 
-@app.route('/ninja/new') # display new html page, and pass dojo information
+@app.route('/ninja/new') # display new html page to create a new ninja, and pass dojo information
 def ninja_new():
     all_dojos = Dojo.get_all()
     return render_template('ninja_new.html', all_dojos=all_dojos)

@@ -24,15 +24,6 @@ class Ninja:
             all_ninjas.append( cls(ninja) )
         return all_ninjas
 
-    @classmethod #show the ninjas in the dojos
-    def show_ninjas(cls,data):
-        query = "SELECT * FROM ninjas WHERE dojo_id = %(id)s;"
-        results = connectToMySQL(DATABASE).query_db(query, data)
-
-        all_ninjas = []
-        for ninja in results:
-            all_ninjas.append( cls(ninja))
-        return all_ninjas
 
     @classmethod #create a new ninja
     def ninja_create(cls, data):
@@ -44,3 +35,13 @@ class Ninja:
     def delete_one(clas, data):
         query = "DELETE FROM ninjas WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)
+
+        #displaying ninjas and dojos old method
+    # @classmethod #show the ninjas in the dojos
+    # def show_ninjas(cls,data):
+    #     query = "SELECT * FROM ninjas WHERE dojo_id = %(id)s;"
+    #     results = connectToMySQL(DATABASE).query_db(query, data)
+    #     all_ninjas = []
+    #     for ninja in results:
+    #         all_ninjas.append( cls(ninja))
+    #     return all_ninjas

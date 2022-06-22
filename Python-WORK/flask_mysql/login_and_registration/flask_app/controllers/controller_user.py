@@ -28,8 +28,9 @@ def register_user():
             'email': request.form['email'],
             'password': bcrypt.generate_password_hash(request.form['password']),
         }
-        User.create_new_user(data)
-        return redirect('/')
+        session['user_id'] = User.create_new_user(data)
+        return redirect('/account')
+
 
 @app.route('/user/login', methods=['post']) #login an user
 def login_user():
@@ -56,7 +57,9 @@ def account():
         flash("Please log in to view this resource")
         return redirect('/')
 
-    return render_template('account.html')
+    user = User.get_by_id({'id':session['user_id']})
+
+    return render_template('account.html',user=user)
 
 @app.route('/reset') #clean and go back to the start/ first page
 def reset():

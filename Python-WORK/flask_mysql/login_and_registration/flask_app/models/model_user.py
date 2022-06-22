@@ -17,7 +17,7 @@ class User:
         self.updated_at = data['updated_at']
 
     @classmethod #show the dojo information
-    def show_one(cls, data):
+    def get_by_id(cls, data):
         query = "SELECT * FROM users WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)[0]
 

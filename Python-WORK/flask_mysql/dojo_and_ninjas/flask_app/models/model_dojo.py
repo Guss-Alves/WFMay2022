@@ -9,6 +9,7 @@ class Dojo:
         self.name = data['name']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+        self.ninjas = []
     # Now we use class methods to query our database
 
     @classmethod

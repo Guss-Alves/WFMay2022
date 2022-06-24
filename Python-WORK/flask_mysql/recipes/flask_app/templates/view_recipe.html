@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar{
+            display: flex;
+            width: 800px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav{
+            display: inline-block;
+        }
+        .box{
+            border: 1px solid black;
+            width: 700px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="nav" >Welcome {{user.first_name}}</h1>
+    <div class="right">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/reset">Lougout</a>
+    </div>
+    </div>
+    <h1>{{recipe.name}}</h1>
+    <h2>Created by {{recipe.user.first_name}}</h2>
+    <div class="box">
+        <p><strong>Description :</strong> <span>{{recipe.description}}</span></p> <br>
+        <p></p><strong>Under 30 minites :</strong> <span>{{recipe.under_thirty}}</span></p> <br>
+        <p></p><strong>Instructions :</strong> <span>{{recipe.instruction}}</span></p> <br>
+        <p></p><strong>Date made on :</strong> <span>{{recipe.date}}</span></p> 
+    </div>
+    {% if recipe.user.id == user.id %} <a href="/recipe/{{recipe.id}}/edit"> Edit</a> <a href="/recipe/{{recipe.id}}/delete"> Delete</a> {% endif %}
+</body>
+</html>

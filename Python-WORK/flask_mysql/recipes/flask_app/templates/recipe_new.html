@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar{
+            display: flex;
+            width: 800px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="nav" >Add New Recipe</h1>
+    <div class="right">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/reset">Lougout</a>
+    </div>
+    </div>
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+        {% if messages %}                            <!-- check if there are any messages -->
+            {% for message in messages %}            <!-- loop through the messages -->
+                <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form action="/recipe/create" method="post">
+        Name : <br>
+        <input type="text" name="recipe_name" id="recipe_name"> <br>
+        Description : <br>
+        <textarea name="recipe_description" id="recipe_description" cols="30" rows="5"></textarea> <br>
+        Instructions : <br>
+        <textarea name="recipe_instruction" id="recipe_instruction" cols="30" rows="5"></textarea><br>
+        Date made on : <br>
+        <input type="date" name="recipe_date" id="recipe_date"><br>
+        Under 30 minutes ? <br>
+        <input type="radio" name="recipe_under_thirty" value="Yes" checked>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="recipe_under_thirty" value="No">
+        <label for="No">No</label><br>
+        <input type="submit" value="Create">
+
+    </form>
+</body>
+</html>

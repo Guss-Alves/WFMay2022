@@ -74,7 +74,7 @@ console.log(dojo);
 console.log(makeDojo("Chicago", 65));
 console.log(makeDojo("Berkeley", 0));
 function makeDojo(name, students){
-    let dojo = {};
+    const dojo = {};
     dojo.name = name;
     dojo.students = students;
     if(dojo.students > 50){

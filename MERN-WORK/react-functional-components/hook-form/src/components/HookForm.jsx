@@ -18,22 +18,37 @@ const HookForm = () =>{
                 <div className="mb-2 bg-secondary text-white p-2 rounded">
                     <label>First Name:</label>
                     <input onChange={(e)=> setFName(e.target.value)} className="form-control" type="text" placeholder="First name here..."/>
+                    {
+                        fname.length<2 && fname.length>0 ? <p className="text-danger bg-warning mt-2 mb-2">First name must have at least 2 characters</p> : null
+                    }
                 </div>
                 <div className="mb-2 bg-secondary text-white p-2 rounded">
                     <label>Last Name:</label>
                     <input onChange={(e)=> setLName(e.target.value)} className="form-control" type="text" placeholder="Last name here..."/>
+                    {
+                        lname.length<2 && lname.length>0 ? <p className="text-danger bg-warning mt-2 mb-2">Last name must have at least 2 characters</p> : null
+                    }
                 </div>
                 <div className="mb-2 bg-secondary text-white p-2 rounded">
                     <label>Email:</label>
                     <input onChange={(e)=> setEmail(e.target.value)} className="form-control" type="email" placeholder="Email here..."/>
+                    {
+                        email.length<2 && email.length>0 ? <p className="text-danger bg-warning mt-2 mb-2">Email must have at least 2 characters</p> : null
+                    }
                 </div>
                 <div className="mb-2 bg-secondary text-white p-2 rounded">
                     <label>Password:</label>
-                    <input onChange={(e)=> showPassword(e.target.value)} className="form-control" type="password" placeholder="password..."/>
+                    <input id="secret" onChange={(e)=> showPassword(e.target.value)} className="form-control" type="password" placeholder="password..."/>
+                    {
+                        password.length<8 && password.length>0 ? <p className="text-danger bg-warning mt-2 mb-2">Password must have at least 8 characters</p> : null
+                    }
                 </div>
                 <div className="mb-2 bg-secondary text-white p-2 rounded">
                     <label>Confirm password:</label>
                     <input onChange={(e)=> showPassword2(e.target.value)} className="form-control" type="password" placeholder="confirm your password..."/>
+                    {
+                        password!=secondpassword && secondpassword.length>0 ? <p className="text-danger bg-warning mt-2 mb-2"> Password must match</p> : null
+                    }
                 </div>
             </form>
             <hr/>

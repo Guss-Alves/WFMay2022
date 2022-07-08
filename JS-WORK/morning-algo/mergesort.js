@@ -47,7 +47,29 @@ function merge(arry1, arry2) {
         result.push(arry1[index1]);
         index1++;
     }
-    console.log(result)
+    return result;
 }
 
-merge(sortedA4, sortedB4)
+//https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/
+function mergeSort(arr) {
+    //hint: look at the slice method to help you break down this array into halves
+    //hint: see if you can use recursion with this
+    // break this array into half
+    while (arr.length > 1) {
+        let mid = Math.floor(arr.length/2)
+        // console.log(mid)
+        let leftHalf = arr.slice(0, mid)
+        // console.log(leftHalf)
+        let rightHalf = arr.slice(mid, arr.length)
+        // console.log(rightHalf)
+        let left = mergeSort(leftHalf)
+        let right = mergeSort(rightHalf)
+        // console.log(left)
+        // console.log(right)
+        return merge(left, right)
+    }
+    return arr
+}
+
+
+console.log(mergeSort([6, 3, 8, 5, 1, 2, 9]))

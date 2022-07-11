@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+            
+.box-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

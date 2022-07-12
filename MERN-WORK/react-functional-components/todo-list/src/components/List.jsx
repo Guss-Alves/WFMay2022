@@ -52,7 +52,7 @@ const List = ()=>{
                             <div className="goal" key={index}>
                                 <div className="goal-def">
                                     <p style={{textDecoration: item.boxcheck? "line-through": "none"}}> <strong>{item.todo}</strong> </p>
-                                    <input onClick={(e)=>check(e,index)} type="checkbox"/>
+                                    <input onClick={(e)=>check(e,index)} type="checkbox" checked={item.boxcheck}/>
                                     <button onClick={(e)=> deleteItem(e,index)} className="btn btn-danger btn-sm">Delete</button>
                                 </div>
                             </div>

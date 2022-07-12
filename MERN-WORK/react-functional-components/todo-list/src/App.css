@@ -1,0 +1,12 @@
+body{
+    background-color: antiquewhite;
+}
+.goal{
+    margin-bottom: 10px;
+}
+.goal-def{
+    background-color: rgb(112, 180, 223);
+    padding: 10px 10px;
+    display: flex;
+    gap: 15px;
+}

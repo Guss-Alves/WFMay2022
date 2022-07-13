@@ -12,7 +12,7 @@ const AxiosCrypto = ()=>{
                 console.log('this is your data ->', response)
                 setCoins(response.data)
             })
-            .then((err)=>{
+            .catch ((err)=>{
                 console.log('something went wrong ->', err)
             })
     }

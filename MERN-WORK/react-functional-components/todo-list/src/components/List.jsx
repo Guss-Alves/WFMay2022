@@ -29,7 +29,7 @@ const List = ()=>{
 
     const check = (e, index)=>{
         let copyOfToDo = [...entirelist]
-
+        
         copyOfToDo[index].boxcheck = e.target.checked
 
         setEntireList(copyOfToDo);

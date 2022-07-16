@@ -1,38 +1,34 @@
-import React, {useState, useEffect} from "react";
-import axios from 'axios';
+import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 const Form = ()=>{
 
-    let [list, setList] = useState([])
+    let [category, setCategory] = useState("")
+    let [id, setId] = useState("")
     
-    useEffect(()=> {
-        
-        axios.get("https://swapi.dev/api/")
-            .then(response =>{
-                console.log('this is the API results ->', response)
-                setList(Object.keys(response.data))
-            })
-            .catch( err =>{
-                console.log('something went wrong ->', err)
-            })
-    }, []);
+    const navigate = useNavigate();
 
+    const submitHandler = (e)=>{
+        e.preventDefault()
+        // console.log('hello')
+        navigate(`/${category}/${id}`)
+    }
 
     return(
         <>
-            <form className="container">
+            <form onSubmit={submitHandler} className="container">
+
                 <label>Search for :</label>
-                <select onChange={(e)=>(e.target.value)}>
-                    {
-                        list.map((item, index)=>{
-                            return(
-                                <option key={index} value="{item}">{item}</option>
-                            )
-                        })
-                    }
+                <select onChange={(e)=> setCategory(e.target.value)}>
+                    <option disabled selected value></option>
+                    <option value="people">People</option>
+                    <option value="planets">Planets</option>
+                    <option value="films">Films</option>
                 </select>
+
                 <label>ID :</label>
-                <input className="number" type="number"/>
+                <input onChange={(e)=>setId(e.target.value)}  className="number" type="number"/>
+                
                 <input type="submit" value="Search" />
             </form>
             <hr />

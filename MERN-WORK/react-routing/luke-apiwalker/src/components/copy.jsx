@@ -28,7 +28,7 @@ const Data = () => {
     return (
         <div>
             {
-                category === "people" && id < 84 ?
+                category === "people" ?
                     <>
                         <div className='card'>
                             <h1>Name: {info.name} </h1>
@@ -37,26 +37,26 @@ const Data = () => {
                             <h3>Hair Color: {info.hair_color}</h3>
                             <h3>Skin Color: {info.skin_color}</h3>
                         </div>
-                    </> : <><h1>These are not the droids</h1> <img src={obi} /> </> }
-                    {/* // category == "planets" ?
-                    // <>
-                    // <div className='card'>
-                    //     <h1>planet: {info.name} </h1>
-                    //     <h3>Climate: {info.climate}</h3>
-                    //     <h3>Terrain: {info.terrain}</h3>
-                    //     <h3>Surface Water: {info.surface_water}</h3>
-                    //     <h3>Population: {info.population}</h3>
-                    // </div>
-                    // </> : category == "films" ?
-                    // <>
-                    //     <div className='card'>
-                    //         <h1>Title: {info.title} </h1>
-                    //         <h3>Director: {info.director}</h3>
-                    //         <h3>Producer: {info.producer}</h3>
-                    //         <h3>Release Date: {info.release_date}</h3>
-                    //     </div>
-                    // </> : null */}
-            
+                    </> : category ==='planets' ?
+                    <>
+                    <div className='card'>
+                        <h1>planet: {info.name} </h1>
+                        <h3>Climate: {info.climate}</h3>
+                        <h3>Terrain: {info.terrain}</h3>
+                        <h3>Surface Water: {info.surface_water}</h3>
+                        <h3>Population: {info.population}</h3>
+                    </div>
+                    </> : category == 'films' ? 
+                    <>
+                        <div className='card'>
+                            <h1>Title: {info.title} </h1>
+                            <h3>Director: {info.director}</h3>
+                            <h3>Producer: {info.producer}</h3>
+                            <h3>Release Date: {info.release_date}</h3>
+                        </div>
+                    </> : null 
+                
+            }
         </div>
     );
 };

@@ -28,7 +28,7 @@ const Data = () => {
     return (
         <div>
             {
-                category === "people" ?
+                category === "people" && check ?
                     <>
                         <div className='card'>
                             <h1>Name: {info.name} </h1>
@@ -37,7 +37,7 @@ const Data = () => {
                             <h3>Hair Color: {info.hair_color}</h3>
                             <h3>Skin Color: {info.skin_color}</h3>
                         </div>
-                    </> : category ==='planets' ?
+                    </> : category ==='planets' && check ?
                     <>
                     <div className='card'>
                         <h1>planet: {info.name} </h1>
@@ -46,7 +46,7 @@ const Data = () => {
                         <h3>Surface Water: {info.surface_water}</h3>
                         <h3>Population: {info.population}</h3>
                     </div>
-                    </> : category == 'films' ? 
+                    </> : category === 'films' && check ? 
                     <>
                         <div className='card'>
                             <h1>Title: {info.title} </h1>
@@ -54,7 +54,7 @@ const Data = () => {
                             <h3>Producer: {info.producer}</h3>
                             <h3>Release Date: {info.release_date}</h3>
                         </div>
-                    </> : null 
+                    </> : <><h1>These aren't the droids you're looking for</h1><img src={obi} alt="error pic" /> </>
                 
             }
         </div>

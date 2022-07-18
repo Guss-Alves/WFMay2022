@@ -35,6 +35,15 @@ class Company{
     }
 }
 
+app.get('/api/all', (req,res)=>{
+    let newUser = new User();
+
+    res.json({
+        count : User.length,
+        result: newUser
+    })
+})
+
 app.post('/api/users/new', (req, res)=>{
 
     let newUser = new User();
@@ -50,11 +59,9 @@ app.post('/api/users/new', (req, res)=>{
 })
 
 app.post('/api/companies/new', (req, res)=>{
-
-    let newCompany = new Company();
-
+    
     res.json({
-        results: newCompany
+        results: new Company()
     })
 })
 

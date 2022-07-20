@@ -1,0 +1,72 @@
+.title{
+    text-align: center;
+}
+
+/* CSS for the form */
+.form-create{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.control{
+    margin-bottom: 5px;
+    background-color:lightgray ;
+    padding: 8px;
+    border-radius: 10px;
+}
+label{
+    font-size: 1.3rem;
+}
+input{
+    margin-left: 5px;
+    width: 200px;
+}
+.btn{
+    background-color: lightgreen;
+    font-weight: 700;
+    padding: 5px;
+    width: 100px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+hr{
+    width: 750px;
+}
+
+
+/* CSS for the list of products */
+.product-display{
+    text-align: center;
+}
+a{
+    color: black;
+    font-size: 1.2rem;
+}
+.product-card{
+    margin: 15px
+}
+
+
+/* CSS for the validators */
+.validation{
+    color: red;
+    background-color: lightyellow;
+    border-radius: 5px;
+}
+
+
+/* here starts code for the Detail route */
+.product-details{
+    color: firebrick;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 50px; 
+    height: 270px;
+}
+.dashboard{
+    text-align: center;
+    text-decoration: none;
+    background-color: chartreuse;
+    padding: 5px;
+    border-radius: 10px;
+}

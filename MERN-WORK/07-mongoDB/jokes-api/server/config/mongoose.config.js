@@ -1,6 +1,6 @@
 const mongoose = require("mongoose"); // here you import mongoose
 
-mongoose.connect('mongodb+srv://root:root@cluster.b6m7weh.mongodb.net/jokes_db?retryWrites=true&w=majority', {
+mongoose.connect('', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

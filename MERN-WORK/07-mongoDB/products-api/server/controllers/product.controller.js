@@ -23,3 +23,30 @@ module.exports.createNewProduct = (req, res) =>{
             res.json({message: 'Something went wrong', error: err})
         })
 }
+
+module.exports.updateProduct = (req, res)=>{
+    Product.findOneAndUpdate(
+        {_id:req.params.id},
+        req.body,
+        {new: true, runValidators: true})
+            .then(updatedProduct =>{
+                res.json({
+                    results : updatedProduct
+                })
+            })
+            .catch(err=>{
+                res.json({
+                    message : 'Something went wrong', error: err
+                })
+            })
+}
+
+module.exports.deleteProduct = (req, res)=>{
+    Product.findByIdAndDelete({_id:req.params.id})
+        .then(deletedProduct =>{
+            res.json({results: deletedProduct})
+        })
+        .catch(err =>{
+            re.json({message : 'Something went wrong', error: err})
+        })
+}

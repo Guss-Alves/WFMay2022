@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 
-const Form = () => {
+const Form = (props) => {
 
     let [formInfo, setFormInfo] = useState({});
     let [formError, setFormError] = useState({});
@@ -22,7 +22,8 @@ const Form = () => {
                 if(response.data.error?.errors){
                     setFormError(response.data.error.errors);
                 }else{
-                    setFormError({});
+                    setFormError({})
+                    props.setFormSubmitted(!props.formsubmitted)
                 }
             })
             .catch(err=>{

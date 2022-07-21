@@ -38,9 +38,9 @@ hr{
 .product-display{
     text-align: center;
 }
-a{
+.product-name{
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .product-card{
     margin: 15px
@@ -61,7 +61,7 @@ a{
     text-align: center;
     background-color: lightblue;
     margin-top: 50px; 
-    height: 270px;
+    padding: 20px;
 }
 .dashboard{
     text-align: center;
@@ -69,4 +69,25 @@ a{
     background-color: chartreuse;
     padding: 5px;
     border-radius: 10px;
+}
+
+/*Here starts CSS for updating a product  */
+.update-btn{
+    text-decoration: none;
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.update-card{
+    margin: 7px 0;
+}
+/* Here is the CSS to delete */
+.btn-delete{
+    background-color: red;
+    padding: 5px;
+    font-weight: 550;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }

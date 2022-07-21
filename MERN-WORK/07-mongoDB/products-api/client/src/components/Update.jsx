@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import {Link} from 'react-router-dom'
 
@@ -29,7 +29,7 @@ const Update = () => {
         e.preventDefault()
         axios.put(`http://localhost:8000/api/product/edit/${id}`, update)
         .then(res =>{
-            console.log(res.data)
+            console.log(res.data.error)
             if(res.data.error?.errors){
                 setFormError(res.data.error?.errors)
             }else{

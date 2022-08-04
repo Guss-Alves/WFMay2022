@@ -14,6 +14,20 @@ public class MammalTest {
 		g1.eatBananas();
 		g1.climb();
 		g1.displayEnergy();
+		
+		System.out.println("******separate*******");
+		Bat b1 = new Bat();
+		b1.attackTown();
+		b1.attackTown();
+		b1.attackTown();
+		b1.eatHumans();
+		b1.eatHumans();
+		b1.eatHumans();
+		b1.fly();
+		b1.fly();
+		
+		b1.displayEnergy();
+		
 	}
 
 }

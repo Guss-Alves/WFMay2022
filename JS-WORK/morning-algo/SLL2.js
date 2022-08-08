@@ -4,7 +4,6 @@ class ListNode {
         this.next = null;
     }
 }
-
 class SinglyLinkedList {
     constructor() {
         this.head = null;
@@ -74,7 +73,6 @@ class SinglyLinkedList {
             this.insertAtBack(value);
         }
     }
-
     /**
          * Converts this list into an array containing the data of each node.
          * - Time: O(n) linear.
@@ -123,7 +121,6 @@ class SinglyLinkedList {
         let lastNode = node.next;
         node.next = null;
         return lastNode;
-
     }
     /**
  * Determines whether or not the given search value exists in this list.
@@ -144,18 +141,65 @@ class SinglyLinkedList {
             return false;
         }
     }
+    /**
+ * Retrieves the data of the second to last node in this list.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @returns {any} The data of the second to last node or null if there is no
+ *    second to last node.
+ */
+    secondToLast() {
+        if(this.isEmpty() || this.head.next == null){
+            return null;
+        }
+        let runner = this.head;
+        while(runner.next.next){
+            runner = runner.next;
+        }
+        return runner.data; 
+    }
+/**
+  * Removes the node that has the matching given val as it's data.
+  * - Time: O(?).
+  * - Space: O(?).
+  * @param {any} val The value to compare to the node's data to find the
+  *    node to be removed.
+  * @returns {boolean} Indicates if a node was removed or not.
+  */
+    removeVal(value){
+        let removedValue = false;
+        let reomveCounter = 0;
+        if (this.head == null){
+            return removedValue;
+        }
+        if (this.head.data == value){
+            this.head = this.head.next;
+            removedValue = true;
+            reomveCounter++;
+        }
+        let runner = this.head;
+        while (runner.next != null){
+            if (runner.next.data == value){
+                    runner.next = runner.next.next;
+                removedValue = true;
+                reomveCounter++;
+            } else{
+            runner = runner.next;
+            }
+        }
+        console.log(reomveCounter);
+        return removedValue;
+    }
 }
 
 let list1 = new SinglyLinkedList();
-// list1.removeFromFront();
-// console.log(list1.isEmpty());
 list1.insertAtBack(3);
+console.log(list1.secondToLast());
 list1.insertAtBack(2);
-
-// console.log(list1.isEmpty());
 
 list1.insertAtBack(1);
 list1.insertAtBack(4);
 console.log(list1.contains(5))
-
+list1.insertAtBack(10);
+console.log(list1.secondToLast());
 list1.display();

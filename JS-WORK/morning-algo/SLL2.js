@@ -190,16 +190,154 @@ class SinglyLinkedList {
         console.log(reomveCounter);
         return removedValue;
     }
+    /**
+ * Inserts a new node before a node that has the given value as its data.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {any} newVal The value to use for the new node that is being added.
+ * @param {any} targetVal The value to use to find the node that the newVal
+ *    should be inserted in front of.
+ * @returns {boolean} To indicate whether the node was pre-pended or not.
+ */
+    prepend(value, target){
+        let newNode = new ListNode(value)
+        
+        if(this.isEmpty()){
+            return false;
+        }
+        else if(this.head.data == target){
+            newNode.next = this.head;
+            this.head = newNode;
+            return true;
+        }
+
+        let runner = this.head;
+        while(runner.next != null){
+            if(runner.next.data == target){
+                newNode.next = runner.next;
+                runner.next = newNode;
+                return true;
+            }
+            runner = runner.next;
+        }
+        return false;
+    }
+ /**
+ * Finds the node with the smallest data and moves that node to the front of
+ * this list.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @returns {SinglyLinkedList} This list.
+ */
+    moveMinToFront() {
+        if( this.isEmpty() || this.head.next == null){
+            return this;
+        }
+        
+        let minNode = this.head;
+        let nodeBeforeMinNode = null;
+        
+        let runner = this.head;
+        while( runner.next ){
+            if( runner.next.data < minNode.data ) {
+                minNode = runner.next;
+                nodeBeforeMinNode = runner;
+            }
+            runner = runner.next;
+        }
+
+        if( ! nodeBeforeMinNode ){
+            return this;
+        }
+        
+        let nodeAfterMinNode = minNode.next;
+        minNode.next = this.head;
+        this.head = minNode;
+        nodeBeforeMinNode.next = nodeAfterMinNode;
+        
+        return this;
+    }
+    /**
+ * Concatenates the nodes of a given list onto the back of this list.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {SinglyLinkedList} addList An instance of a different list whose
+ *    whose nodes will be added to the back of this list.
+ * @returns {SinglyLinkedList} This list with the added nodes.
+ */
+    concat(concatList){
+        if (this.isEmpty()){
+            this.head = concatList.head;
+            return list1;
+        }
+
+        let runner1 = this.head;
+        while (runner1.next != null){
+            runner1 = runner1.next;
+        }
+        runner1.next = concatList.head;
+        return list1;
+    }
+
+ /**
+ * Splits this list into two lists where the 2nd list starts with the node
+ * that has the given value.
+ * splitOnVal(5) for the list (1=>3=>5=>2=>4) will change list to (1=>3)
+ * and the return value will be a new list containing (5=>2=>4)
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {any} val The value in the node that the list should be split on.
+ * @returns {SinglyLinkedList} The split list containing the nodes that are
+ *    no longer in this list.
+ */
+    splitOnVal( val ){
+        if( this.isEmpty() ){
+            return null;
+        }
+        if( this.head.data === val){
+            let returnList = new SinglyLinkedList();
+            returnList.head = this.head;
+            this.head = null;
+            return returnList;
+        }
+        let runner = this.head;
+        while( runner.next ){
+            if( runner.next.data === val){
+                let returnList = new SinglyLinkedList();
+                returnList.head = runner.next;
+                runner.next = null;
+                return returnList;
+            }
+            runner = runner.next;
+        }
+        return null;
+    }
+
+/**
+ * Recursively finds the maximum integer data of the nodes in this list.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {ListNode} runner The start or current node during traversal, or null
+ *    when the end of the list is reached.
+ * @param {ListNode} maxNode Keeps track of the node that contains the current
+ *    max integer as it's data.
+ * @returns {?number} The max int or null if none.
+ */
+    recursiveMax(runner = this.head, maxNode = this.head) {}
 }
 
 let list1 = new SinglyLinkedList();
 list1.insertAtBack(3);
-console.log(list1.secondToLast());
+// console.log(list1.secondToLast());
 list1.insertAtBack(2);
-
 list1.insertAtBack(1);
 list1.insertAtBack(4);
-console.log(list1.contains(5))
+// console.log(list1.contains(5))
 list1.insertAtBack(10);
-console.log(list1.secondToLast());
+list1.display();
+list1.prepend(77, 4)
+console.log("*****************************");
+list1.display();
+console.log("*****************************");
+console.log(list1.splitOnVal(77));
 list1.display();

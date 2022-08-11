@@ -41,10 +41,12 @@ public class ExpenseController {
 	
 	//HERE WE WILL ----CREATE---- A NEW SOMETHING
 	@PostMapping("/expenses/new")
-	public String proccessCreate(@Valid @ModelAttribute("expense") Expense expense, BindingResult result) {
+	public String proccessCreate(@Valid @ModelAttribute("expense") Expense expense, BindingResult result, Model model) {
 		
 		if(result.hasErrors()) {
-			return "redirect:/";
+			List<Expense> expenses = expenseService.allExpenses();
+			model.addAttribute("expenseList", expenses);
+			return "dashboard.jsp";
 		}else {
 			expenseService.createExpense(expense);
 			return "redirect:/";
@@ -73,7 +75,7 @@ public class ExpenseController {
 	}
 	
 	//HERE WE WILL ----DELETE---- SOMETHING
-	@DeleteMapping("expense/delete/{id}")
+	@DeleteMapping("/expense/delete/{id}")
 	public String processDelete(@PathVariable("id") Long id) {
 		
 		expenseService.deleteExpense(id);
@@ -81,5 +83,14 @@ public class ExpenseController {
 		return "redirect:/";
 	}
 	
+	//HERE IS THE FUNCTION TO SHOW ONE SINGLE ITEM
+	@GetMapping("/expense/show/{id}")
+	public String oneExpense(@PathVariable("id") Long id, Model model) {
+		Expense foundExpense = expenseService.oneExpense(id);
+		
+		//NOW I NEED ADD IT TO THE MODEL IN ORDER TO USE ON FRONT-END
+		model.addAttribute("oneExpense", foundExpense);
+		return "details.jsp";
+	}
 	
 }

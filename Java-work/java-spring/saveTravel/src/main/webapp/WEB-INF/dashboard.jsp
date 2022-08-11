@@ -25,11 +25,11 @@
   <tbody>
   <c:forEach var="eachExpense" items="${expenseList}">
     <tr>
-      <td> <a href="${eachExpense.id }/expense"> ${ eachExpense.expenseName } </a> </td>
+      <td> <a href="/expense/show/${eachExpense.id}"> ${ eachExpense.expenseName } </a> </td>
       <td>${ eachExpense.vendor }</td>
       <td>${ eachExpense.amount }</td>
       <td> <div class="d-flex"> <a class="btn btn-primary me-1" href="/expense/${eachExpense.id}">Edit</a>
-  		<form action="expense/delete/${eachExpense.id}" method="POST" >
+  		<form action="/expense/delete/${eachExpense.id}" method="POST" >
 	  		<input type="hidden" name="_method" value="delete"/>
 	  		<button class="btn btn-danger" type="submit" >Delete</button>
   		</form>	 

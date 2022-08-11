@@ -37,8 +37,13 @@ public class ExpenseService {
         }
     } 
 	
-    //UPDATE ONE 
-	public Expense updateExpense(Long id, String expenseName, String vendor, Double amount, String description ) {
+	 //UPDATE ONE 
+	public Expense updateExpense( Expense expense ) {
+			return expenseRepo.save(expense);
+		}
+	
+    //UPDATE ONE FOR API WITHOUT USING THE MODEL MODEL
+	public Expense updateExpenseApi(Long id, String expenseName, String vendor, Double amount, String description ) {
 		Expense foundExpense = this.oneExpense(id);
 		foundExpense.setExpenseName(expenseName);
 		foundExpense.setVendor(vendor);

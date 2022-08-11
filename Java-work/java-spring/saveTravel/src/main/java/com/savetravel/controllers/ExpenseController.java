@@ -8,10 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import com.savetravel.models.Expense;
 import com.savetravel.services.ExpenseService;
@@ -22,7 +25,7 @@ public class ExpenseController {
 	@Autowired
 	private ExpenseService expenseService;
 	
-	//HERE WE ARE DISPLAYING ALL
+	//HERE WE ARE -----DISPLAYING ALL-----
 	@GetMapping("/")
 	public String dashboard(Model model) {
 		//get the list of Expenses from the database
@@ -36,7 +39,7 @@ public class ExpenseController {
 		return "dashboard.jsp";
 	}
 	
-	//HERE WE WILL CREATE A NEW SOMETHING
+	//HERE WE WILL ----CREATE---- A NEW SOMETHING
 	@PostMapping("/expenses/new")
 	public String proccessCreate(@Valid @ModelAttribute("expense") Expense expense, BindingResult result) {
 		
@@ -49,10 +52,34 @@ public class ExpenseController {
 			
 	}
 	
+	//HERE WE WILL ADD THE ----UPDATE--- CONTROLL
+	@GetMapping("/expense/{id}")
+	public String renderEdit(@PathVariable("id") Long id, Model model) {
+		Expense foundExpense = expenseService.oneExpense(id);
+		
+		model.addAttribute("expense", foundExpense);
+		
+		return "editPage.jsp";
+	}
 	
+	@PutMapping("/expense/{id}")
+	public String processEdit(@Valid @ModelAttribute("expense") Expense expense, BindingResult result) {
+		if(result.hasErrors()) {
+			return "editPage.jsp";
+		}else {
+			expenseService.updateExpense(expense);
+			return "redirect:/";
+		}
+	}
 	
-	
-	
+	//HERE WE WILL ----DELETE---- SOMETHING
+	@DeleteMapping("expense/delete/{id}")
+	public String processDelete(@PathVariable("id") Long id) {
+		
+		expenseService.deleteExpense(id);
+		
+		return "redirect:/";
+	}
 	
 	
 }

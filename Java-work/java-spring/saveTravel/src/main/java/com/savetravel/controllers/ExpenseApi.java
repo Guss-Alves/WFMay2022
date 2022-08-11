@@ -54,7 +54,7 @@ public class ExpenseApi {
 							   @RequestParam("amount") Double amount,
 							   @RequestParam("description") String description) {
 	
-		return expenseService.updateExpense(id, expenseName, vendor, amount, description);
+		return expenseService.updateExpenseApi(id, expenseName, vendor, amount, description);
 	
 	}
 	

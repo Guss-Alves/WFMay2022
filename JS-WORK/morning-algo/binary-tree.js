@@ -58,15 +58,25 @@ class BinarySearchTree {
      * @param {number} newVal The data to be added to a new node.
      * @returns {BinarySearchTree} This tree.
      */
-    insert(newVal) { 
-        let three1 = new BSTNode(newVal);
+    insert(newVal) {         
+        var newNode = new BSTNode(newVal);
+        var runner = this.root;
         if(this.isEmpty()){
-            this.root = three1;
-        }else{
-
+            this.root = newNode;
+        }
+        while(runner){
+            if(newNode.data >= runner.data && !runner.right){
+                return runner.right = newNode;
+            }
+            else if(newNode.data >= runner.data && runner.right){
+                runner = runner.right;
+            } else if(newNode.data <= runner.data && !runner.left){
+                return runner.left = newNode;
+            } else if(newNode.data <= runner.data && runner.left){
+                runner = runner.left;
+            }
         }
     }
-
     /**
     * Retrieves the smallest integer data from this tree.
     * - Time: O(?).
@@ -86,4 +96,51 @@ class BinarySearchTree {
                 return current;
         }
     }
+    /**
+   * Retrieves the smallest integer data from this tree.
+   * - Time: O(?).
+   * - Space: O(?).
+   * @param {Node} current The node that is currently accessed from the tree as
+   *    the tree is being traversed.
+   * @returns {number} The smallest integer from this tree.
+   */
+    minRecursive(current = this.root) {
+        if(this.isEmpty()){
+            return false;
+        }
+        if(current.left != null){
+            return this.minRecursive(current.left);
+        }
+        return current.data;
+    }
+
+/**
+ * Determines if this tree contains the given searchVal.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {number} searchVal The number to search for in the node's data.
+ * @returns {boolean} Indicates if the searchVal was found.
+ */
+    contains(searchVal) {}
+
+/**
+ * Determines if this tree contains the given searchVal.
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {number} searchVal The number to search for in the node's data.
+ * @returns {boolean} Indicates if the searchVal was found.
+ */
+    containsRecursive(searchVal, current = this.root) {}
 }
+
+let newTree = new BinarySearchTree
+console.log(newTree.minRecursive());
+newTree.insert(10);
+newTree.insert(44);
+newTree.insert(8);
+newTree.insert(15);
+newTree.insert(77);
+newTree.insert(-10);
+newTree.insert(1);
+console.log(newTree.minRecursive());
+// console.log(newTree);

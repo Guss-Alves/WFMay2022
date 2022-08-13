@@ -44,7 +44,7 @@ public class NinjaController {
 			return "ninjaForm.jsp";
 		}else {
 			ninjaService.createNinja(ninja);
-			return "redirect:/";
+			return "redirect:/show/dojo/"+ ninja.getDojo().getId();
 		}
 	}
 	

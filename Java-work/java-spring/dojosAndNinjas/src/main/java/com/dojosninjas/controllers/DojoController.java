@@ -33,8 +33,8 @@ public class DojoController {
 		return "nice.jsp";
 	}
 	//FORM TO CREATE DOJO
-	@PostMapping("/dojo/create")
-	public String processDojo(@Valid @ModelAttribute("expense") Dojo dojo, BindingResult result) {
+	@PostMapping("/")
+	public String processDojo(@Valid @ModelAttribute("dojo") Dojo dojo, BindingResult result) {
 		
 		if(result.hasErrors()) {
 			return "home.jsp";

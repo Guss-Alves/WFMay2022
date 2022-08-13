@@ -11,28 +11,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>create dojos</title>
+<title>Dashboard</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container mt-5">
-		<h1>New Dojo</h1>
-		
-		<form:form action="/" method="POST" modelAttribute="dojo">
-			<div>
-				<form:label path="name">Name:</form:label>
-				<form:input type="text" path="name" />
-				<form:errors class="text-danger" path="name"/>
-			</div>
-		<input class="btn btn-success btn-sm mt-2 mb-2" type="submit" value="Create" />
-		</form:form>
-		<a href="/ninja">Add a new ninja -></a>
-		<h4 class="mt-5">View dojos</h4>
-		<c:forEach var="eachDojo" items="${dojos}">
-			<a href="/show/dojo/${eachDojo.id}"><c:out value="${eachDojo.name}" /></a><br>
-		</c:forEach>
+		<div class="d-flex justify-content-between">
+			<h1> Welcome, <c:out value="${userName}" /> ! </h1>
+			<a href="/" >Log out</a>
+		</div>
 	</div>
-	
-	
 </body>
 </html>

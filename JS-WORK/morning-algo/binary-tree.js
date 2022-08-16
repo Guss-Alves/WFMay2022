@@ -199,22 +199,106 @@ class BinarySearchTree {
  *    the tree is being traversed.
  * @returns {BinarySearchTree} This tree.
  */
-    insertRecursive(newVal, curr = this.root) {
-        var newNode = new BSTNode(newVal);
+    insertRecursive(newVal, current = this.root) {
+        if( this.isEmpty() ){
+            this.root = new BSTNode( newVal );
+            return this;
+        }
+        if( newVal === current.data ){
+            current.count++;
+            return this;
+        }
+        if ( newVal > current.data ){
+            if( current.right ){
+                return this.insertRecursive( newVal, current.right );
+            } else {
+                current.right = new BSTNode( newVal );
+                return this;
+            }
+        } else {
+            if( current.left ){
+                return this.insertRecursive( newVal, current.left );
+            } else {
+                current.left = new BSTNode( newVal );
+                return this;
+            }
+        }
     }
+    /**
+ * DFS Inorder: (Left, CurrNode, Right)
+ * Converts this BST into an array following Depth First Search inorder.
+ * See debugger call stack to help understand the recursion.
+ * @param {Node} node The current node during the traversal of this tree.
+ * @param {Array<number>} vals The data that has been visited so far.
+ * @returns {Array<number>} The vals in DFS Preorder once all nodes visited.
+ */
+    toArrInorder(node = this.root, vals = []) {
+        if(this.isEmpty == true){
+            return false
+        }
+        if(node.left){
+            this.toArrInorder(node.left, vals)
+        }
+        vals.push(node.data)
+        if(node.right){
+            this.toArrInorder(node.right, vals)
+        }
+        return vals
+    }
+
+/**
+  * DFS Preorder: (CurrNode, Left, Right)
+  * Converts this BST into an array following Depth First Search preorder.
+  * @param {Node} node The current node during the traversal of this tree.
+  * @param {Array<number>} vals The data that has been visited so far.
+  * @returns {Array<number>} The vals in DFS Preorder once all nodes visited.
+  */
+    toArrPreorder(node = this.root, vals = []) {
+        if(this.isEmpty == true){
+            return false
+        }
+        vals.push(node.data)
+        if(node.left){
+            this.toArrInorder(node.left, vals)
+        }
+        if(node.right){
+            this.toArrInorder(node.right, vals)
+        }
+        return vals
+    }
+/**
+  * DFS Postorder (Left, Right, CurrNode)
+  * Converts this BST into an array following Depth First Search postorder.
+  * @param {Node} node The current node during the traversal of this tree.
+  * @param {Array<number>} vals The data that has been visited so far.
+  * @returns {Array<number>} The vals in DFS Preorder once all nodes visited.
+  */
+    toArrPostorder(node = this.root, vals = []) {
+        if(this.isEmpty == true){
+            return false
+        }
+        if(node.left){
+            this.toArrInorder(node.left, vals)
+        }
+        if(node.right){
+            this.toArrInorder(node.right, vals)
+        }
+        vals.push(node.data)
+        return vals
+    }
+
+
 }
 
 let newTree = new BinarySearchTree
 console.log(newTree.minRecursive());
+newTree.insert(50);
+newTree.insert(25);
 newTree.insert(10);
-newTree.insert(44);
-newTree.insert(8);
-newTree.insert(15);
-newTree.insert(77);
-newTree.insert(-10);
-newTree.insert(1);
-console.log(newTree.min());
-console.log(newTree.max());
-console.log(newTree.range());
-// console.log(newTree.minRecursive());
-// console.log(newTree);
+newTree.insert(40);
+newTree.insert(75);
+newTree.insert(60);
+newTree.insert(90);
+console.log(newTree.toArrInorder());
+console.log(newTree.toArrPreorder());
+console.log(newTree.toArrPostorder());

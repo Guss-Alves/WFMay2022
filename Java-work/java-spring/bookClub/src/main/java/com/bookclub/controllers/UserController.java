@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -104,7 +105,7 @@ public class UserController {
 		return "dashboard.jsp";
 	}
 	
-	//LOGIC TO CRAETE A BOOK
+	//LOGIC TO CREATE A BOOK
 	@GetMapping("/book/new")
 	public String renderBookForm(@ModelAttribute("book") Book book) {
 	
@@ -135,12 +136,21 @@ public class UserController {
 	
 	//LOGIC TO UPDATE A BOOKS
 	@GetMapping("/book/edit/{id}")
-	public String updateBook(@ModelAttribute("book") Book book, @PathVariable("id") Long id, Model model ) {
+	public String updateBook(@PathVariable("id") Long id, Model model, HttpSession session) {
 		Book foundBook = bookService.oneBook(id);
-		
 		//NOW I NEED ADD IT TO THE MODEL IN ORDER TO USE ON FRONT-END
 		model.addAttribute("foundBook", foundBook);
-		return "editBook.jsp";
+		
+		Long userId = (Long)session.getAttribute("userId");
+//		model.addAttribute("userId", userId);
+		
+		//check if the id of user in session is the same of the book creator id
+		if(userId == foundBook.getUser().getId()) {
+			
+			return "editBook.jsp";
+		}else {
+			return "redirect:/dashboard";
+		}
 		
 	}
 	
@@ -158,10 +168,15 @@ public class UserController {
 		}
 	}
 	
-	
-	
-	
-	
+	//LOGIC TO DELETE A BOOK
+	@DeleteMapping("/book/delete/{id}")
+	public String processDelete(@PathVariable("id") Long id) {
+		
+		bookService.deleteBook(id);
+		return "redirect:/dashboard";
+		
+	}
+
 	
 }
 

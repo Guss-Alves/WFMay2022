@@ -30,7 +30,12 @@
   		</div>
 	</div>
 	<c:if test="${userId == foundBook.user.id }">
-		<a href="/book/edit/${foundBook.id}" class="btn btn-primary mt-2">Edit</a>	
+		<a href="/book/edit/${foundBook.id}" class="btn btn-primary mt-2">Edit</a>
+			
+		<form class="mt-2" action="/book/delete/${foundBook.id}" method="POST">
+			<input type="hidden" name="_method" value="delete"/>
+			<button class="btn btn-danger" type="submit" >Delete</button>
+		</form>
 	</c:if>
 	
 </div>

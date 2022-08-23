@@ -286,12 +286,88 @@ class BinarySearchTree {
         vals.push(node.data)
         return vals
     }
+    /**
+   * Calculates the height of the tree which is based on how many nodes from
+   * top to bottom (whichever side is taller).
+   * - Time: O(?).
+   * - Space: O(?).
+   * @param {Node} node The current node during traversal of this tree.
+   * @returns {number} The height of the tree.
+   */
+    height(node = this.root) {
+        if(! node){
+            return 0;
+        }
 
+        let leftHeight = this.height( node.left );
+        let rightHeight = this.height( node.right );
 
+        if(leftHeight > rightHeight){
+            return leftHeight + 1;
+        }else{
+            return rightHeight + 1;
+        }
+    }
+
+/**
+    * Determines if this tree is a full tree. A full tree is a tree where every
+    * node has both a left and a right except for the leaf nodes (last nodes)
+    * - Time: O(?).
+    * - Space: O(?).
+    * @param {Node} node The current node during traversal of this tree.
+    * @returns {boolean} Indicates if this tree is full.
+    */
+    isFull(node = this.root) {
+        if( ! node ){
+            return true;
+        }
+        if( !node.left && node.right || node.left && !node.right ){
+            return false;
+        }
+
+        let leftBool = this.isFull( node.left );
+        let rightBool = this.isFull( node.right );
+
+        if( leftBool &&  rightBool ){
+            return true;
+        }else{
+            return false
+        }
+    }
+    
+/**
+ * Removes the node that has the matching given val as its data
+ * - Time: O(?).
+ * - Space: O(?).
+ * @param {any} The value to compare to the node's data to find the
+ *    node to be removed.
+ * @returns {boolean} Indicates if the node was removed or not.
+ */
+    removeVal( val ) {
+        if(this.isEmpty == true){
+            return false
+        }
+    }
+
+/**
+  * Finds all the values that are repeated in the binary search tree
+  * - Time: O(?).
+  * - Space: O(?).
+  * @returns {Array<Number>} The values that are repeated in the binary search tree
+  */
+    findDuplicates() {
+        let arr = this.toArrInorder()
+        let dups = []
+        for (let i = 0; i<arr.length-1; i++){
+            if (arr[i]==arr[i+1]){
+                dups.push(arr[i])
+            }
+        }
+        return dups
+    }
 }
 
 let newTree = new BinarySearchTree
-console.log(newTree.minRecursive());
 newTree.insert(50);
 newTree.insert(25);
 newTree.insert(10);
@@ -299,6 +375,6 @@ newTree.insert(40);
 newTree.insert(75);
 newTree.insert(60);
 newTree.insert(90);
-console.log(newTree.toArrInorder());
-console.log(newTree.toArrPreorder());
-console.log(newTree.toArrPostorder());
+newTree.insert(95);
+
+console.log(newTree.isFull());

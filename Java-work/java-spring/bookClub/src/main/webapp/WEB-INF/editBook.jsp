@@ -21,29 +21,28 @@
 			<a href="/book/show/${foundBook.id }" >Go Back</a>
 		</div>
 
-<form:form action="/book/edit/${foundBook.id}" method="POST"  modelAttribute="book">
+<form:form action="/book/edit/${foundBook.id}" method="POST"  modelAttribute="foundBook">
 	<input type="hidden" name="_method" value="put"/>
+	<form:hidden path="user" value="${foundBook.user.id}" />
 	<div class="form-group">
 		<form:label path="title">Title:</form:label>
-		<form:input value="${foundBook.title}" class="form-control" type="text" path="title"/>
+		<form:input class="form-control" type="text" path="title"/>
 		<form:errors class="text-danger" path="title"/>
 	</div>
 	<div class="form-group">
 		<form:label path="author">Author:</form:label>
-		<form:input  value="${foundBook.author}" class="form-control" type="text" path="author"/>
+		<form:input class="form-control" type="text" path="author"/>
 		<form:errors class="text-danger" path="author"/>
 	</div>
 		<div class="form-group">
 		<form:label path="thoughts">My thoughts:</form:label><br>
-		<form:textarea placeholder="${foundBook.thoughts}" value="${foundBook.thoughts}" cols="70" rows="4" path="thoughts" /><br>
+		<form:textarea cols="70" rows="4" path="thoughts" /><br>
 		<form:errors class="text-danger" path="thoughts"/>
 	</div>
 	<div class="form-group mt-2">
-	<form:hidden path="user" value="${foundBook.user.id}" />
 		<input class="btn btn-primary" type="submit" value="Update"/>
 	</div>
 </form:form> 
-
 
 </div>
 </body>

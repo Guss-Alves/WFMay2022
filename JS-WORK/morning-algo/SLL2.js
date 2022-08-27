@@ -222,7 +222,7 @@ class SinglyLinkedList {
         }
         return false;
     }
- /**
+/**
  * Finds the node with the smallest data and moves that node to the front of
  * this list.
  * - Time: O(?).
@@ -324,20 +324,46 @@ class SinglyLinkedList {
  * @returns {?number} The max int or null if none.
  */
     recursiveMax(runner = this.head, maxNode = this.head) {}
+    /**
+ * Reverses this list in-place without using any extra lists.
+ * - Time: (?).
+ * - Space: (?).
+ * @returns {SinglyLinkedList} This list.
+ */
+    reverse() {}
+
+ /**
+  * Determines whether the list has a loop in it which would result in
+  * infinitely traversing unless otherwise avoided. A loop is when a node's
+  * next points to a node that is behind it.
+  * - Time: (?).
+  * - Space: (?).
+  * @returns {boolean} Whether the list has a loop or not.
+  */
+    hasLoop(){
+    if(this.isEmpty() || !(this.head.next)){ return false }
+
+    let singleRunner = this.head;
+    let doubleRunner = this.head.next;
+
+    while(singleRunner.next && doubleRunner.next && doubleRunner.next.next){
+        singleRunner = singleRunner.next;
+        doubleRunner = doubleRunner.next.next;
+
+        if(singleRunner === doubleRunner){ return true }
+    }
+    return false;
+}
 }
 
 let list1 = new SinglyLinkedList();
-list1.insertAtBack(3);
-// console.log(list1.secondToLast());
-list1.insertAtBack(2);
+// list1.insertAtBack(3);
+// list1.insertAtBack(2);
 list1.insertAtBack(1);
-list1.insertAtBack(4);
-// console.log(list1.contains(5))
-list1.insertAtBack(10);
-list1.display();
-list1.prepend(77, 4)
-console.log("*****************************");
-list1.display();
-console.log("*****************************");
-console.log(list1.splitOnVal(77));
+list1.insertAtBack(1);
+list1.insertAtBack(1);
+list1.insertAtBack(1);
+list1.insertAtBack(1);
+console.log(list1.hasLoop());
+
 list1.display();

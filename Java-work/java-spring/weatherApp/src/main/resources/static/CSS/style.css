@@ -1,0 +1,96 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://media4.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif?cid=ecf05e47p2m5kfyc5vz5v13ledb41s7qzehbjboakgtyoudv&rid=giphy.gif&ct=g');
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title-container{
+    padding-top: 50px;
+    text-align: center;
+}
+.title{
+    color:thistle;
+    font-size: 4rem;
+
+}
+.container{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-weight:600;
+    padding: 4px;
+    border-radius: 17px;
+    font-size: 18px;
+    width: 90px;
+    line-height: 36px;
+    background-color:thistle;
+    cursor: pointer;
+}
+
+.city{
+    resize: horizontal;
+    width: 500px;
+    line-height: 45px;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 17px;
+}
+
+/* HERE IS CSS FOR THE RESULTS PAGE */
+
+.body2{
+    background-image: url('https://media3.giphy.com/media/hRBsW7Gbkzzq5zR1dn/giphy.gif?cid=790b76117bfa9e2766b9ed1a1c27d83359eac402e7720c5c&rid=giphy.gif&ct=g');
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+.container-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: lightcyan;
+    border-radius: 15px;
+    width: 58rem;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.go-back{
+    display: flex;
+    /* background-color:steelblue; */
+}
+.arrow-container{
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 50px;
+    background-color: thistle;
+}
+.arrow-img{
+    height: 43px;
+    cursor: pointer;
+}
+
+h2, h1{
+    color: thistle;
+}
+
+p{
+    color: thistle;
+}

@@ -21,27 +21,35 @@
         </div>
     </div>
     <div class="container-results">
-        <c:forEach var="climate" items="${ results }">
-            <img src="http://openweathermap.org/img/wn/${climate.getString('icon')}@2x.png" alt="icon">
-            <p>
-                main: ${climate.getString("main")}<br>
-                description : ${climate.getString("description")}	
-            </p>
-        </c:forEach>
-        <h1>Let's go, u got here</h1>
-        <div>
-            <h2> <c:out value="${resultsObj.getString('name')}" /> </h2><br>
-            <p>
-            
-            <!-- visibility: <c:out value="${resultsObj.getString('visibility')}" /><br> -->
-            temp: <c:out value="${mainObj.getString('temp')}" /><br>
-            temp min: <c:out value="${mainObj.getString('temp_min')}" />
-            </p>
+        <div class="head">
+            <div class="left">
+                <div class="img-main">
+                    <c:forEach var="climate" items="${ results }">
+                        <img class="weather-icon" src="http://openweathermap.org/img/wn/${climate.getString('icon')}@2x.png" alt="icon">
+                    </c:forEach>
+                    <c:forEach var="climate" items="${ results }">
+                        <span class="main">${climate.getString("main")}</span>
+                    </c:forEach>
+                </div>
+                <h2 class="city-name"> <c:out value="${resultsObj.getString('name')}" />, <c:out value="${sysObj.getString('country')}" /> </h2>
+            </div>
+            <div class="right">
+                <span><c:out value="${mainObj.getString('temp')}" />°F</span><br>
+                <span class="high-low">H: <c:out value="${mainObj.getString('temp_max')}" />°F</span>
+                <span class="high-low">L: <c:out value="${mainObj.getString('temp_min')}" />°F</span>
+            </div>
         </div>
-        <p>country: <c:out value="${sysObj.getString('country')}" /> </p>
-        <p>sunrise time: <c:out value="${sysObj.getString('sunrise')}" /> </p>
-        <p>sunset time: <c:out value="${sysObj.getString('sunset')}" /> </p>
-        <p>wind speed: <c:out value="${windObj.getString('speed')}" /> </p>
+        <hr>
+            <c:forEach var="climate" items="${ results }">
+                <p>
+                    description : ${climate.getString("description")}	
+                </p>
+            </c:forEach>
+            <p>wind speed: <c:out value="${windObj.getString('speed')}" /> </p>
+        <div class="sun-time">
+            <p>sunrise time: <c:out value="${sysObj.getString('sunrise')}" /> </p>
+            <p>sunset time: <c:out value="${sysObj.getString('sunset')}" /> </p>
+        </div>
     </div>
 </body>
 </html>

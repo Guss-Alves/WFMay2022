@@ -9463,3 +9463,406 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2022-08-26 19:52:14,106 [Worker-394: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-26 19:52:14,106 [Worker-394: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-08-26 19:52:14,107 [Worker-394: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:52:27,557 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:52:27,558 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:52:27,561 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:52:27,644 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:52:27,649 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:52:27,649 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:52:27,649 [Worker-416: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:53:54,054 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:53:54,055 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:53:54,059 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:53:54,131 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:53:54,135 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:53:54,136 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:53:54,136 [Worker-419: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:55:16,030 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:55:16,031 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:55:16,035 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:55:16,061 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:55:16,065 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:55:16,065 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:55:16,065 [Worker-412: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:56:14,400 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:14,400 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:14,403 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:14,426 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:14,429 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:14,429 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:14,430 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:56:49,172 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:49,172 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:49,175 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:49,201 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:49,205 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:49,205 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:49,205 [Worker-420: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 18:56:53,372 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:53,372 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:53,376 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:53,436 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 18:56:53,439 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 18:56:53,439 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 18:56:53,439 [Worker-412: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:01:26,474 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:01:26,474 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:01:26,477 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:01:26,491 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:01:26,493 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:01:26,493 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:01:26,494 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:02:35,200 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:02:35,201 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:02:35,206 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:02:35,221 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:02:35,226 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:02:35,226 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:02:35,227 [Worker-421: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:07:24,602 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:07:24,602 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:07:24,605 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:07:24,626 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:07:24,630 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:07:24,630 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:07:24,630 [Worker-431: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:07:33,822 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:07:33,822 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:07:33,827 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:07:33,843 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:07:33,847 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:07:33,847 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:07:33,847 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:08:01,299 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:08:01,299 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:08:01,302 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:08:01,316 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:08:01,319 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:08:01,320 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:08:01,320 [Worker-428: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:08:54,342 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:08:54,343 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:08:54,347 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:08:54,366 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:08:54,370 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:08:54,370 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:08:54,371 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:09:01,912 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:09:01,912 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:09:01,915 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:09:01,929 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:09:01,932 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:09:01,932 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:09:01,932 [Worker-423: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:09:56,544 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:09:56,545 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:09:56,549 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:09:56,569 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:09:56,572 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:09:56,572 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:09:56,573 [Worker-432: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:15:11,015 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:15:11,015 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:15:11,019 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:15:11,034 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:15:11,044 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:15:11,044 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:15:11,044 [Worker-429: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:15:12,190 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:15:12,190 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:15:12,191 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:15:12,192 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:15:12,198 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:15:12,198 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:15:12,198 [Worker-434: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:16:32,884 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:16:32,884 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:16:32,884 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:16:32,885 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:16:32,896 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:16:32,896 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:16:32,897 [Worker-437: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:19:00,357 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:00,358 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:00,359 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:19:00,360 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:19:00,372 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:00,372 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:00,373 [Worker-436: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:19:23,211 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:23,211 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:23,211 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:19:23,212 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:19:23,225 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:23,225 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:23,226 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:19:37,817 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:37,818 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:37,819 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:19:37,819 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:19:37,830 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:37,830 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:37,830 [Worker-438: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:19:49,721 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:49,721 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:49,721 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:19:49,722 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:19:49,737 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:19:49,737 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:19:49,737 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:20:01,851 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:20:01,852 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:20:01,852 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:20:01,853 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:20:01,862 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:20:01,862 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:20:01,862 [Worker-440: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:21:11,192 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:21:11,192 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:21:11,193 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:21:11,193 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:21:11,209 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:21:11,209 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:21:11,210 [Worker-441: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:22:01,734 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:22:01,735 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:22:01,736 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:22:01,737 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:22:01,748 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:22:01,748 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:22:01,749 [Worker-443: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:23:41,115 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:23:41,116 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:23:41,116 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:23:41,118 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:23:41,131 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:23:41,131 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:23:41,132 [Worker-446: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:24:45,590 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:24:45,590 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:24:45,591 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:24:45,592 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:24:45,608 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:24:45,608 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:24:45,608 [Worker-449: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:25:22,025 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:25:22,026 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:25:22,026 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:25:22,027 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:25:22,036 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:25:22,036 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:25:22,036 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:25:41,828 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:25:41,828 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:25:41,829 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:25:41,829 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:25:41,841 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:25:41,841 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:25:41,841 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:28:25,520 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:28:25,520 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:28:25,521 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:28:25,523 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:28:25,535 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:28:25,535 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:28:25,535 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:28:47,733 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:28:47,733 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:28:47,734 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:28:47,735 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:28:47,747 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:28:47,747 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:28:47,747 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:29:33,263 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:29:33,264 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:29:33,264 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:29:33,265 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:29:33,274 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:29:33,274 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:29:33,274 [Worker-445: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:30:42,644 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:30:42,645 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:30:42,646 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:30:42,646 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:30:42,664 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:30:42,664 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:30:42,665 [Worker-450: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:30:59,985 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:30:59,986 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:30:59,986 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:30:59,987 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:30:59,998 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:30:59,998 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:30:59,998 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:31:07,483 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:31:07,483 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:31:07,484 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:31:07,485 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:31:07,495 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:31:07,495 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:31:07,496 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:31:37,195 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:31:37,196 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:31:37,196 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:31:37,197 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:31:37,208 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:31:37,209 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:31:37,209 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:32:31,899 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:32:31,900 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:32:31,901 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:32:31,901 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:32:31,911 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:32:31,911 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:32:31,911 [Worker-451: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:43:44,644 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:43:44,645 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:43:44,645 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:43:44,646 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:43:44,659 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:43:44,659 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:43:44,659 [Worker-453: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:45:45,012 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:45:45,012 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:45:45,013 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:45:45,013 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:45:45,028 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:45:45,028 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:45:45,028 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 19:46:03,603 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:46:03,603 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:46:03,604 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 19:46:03,604 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 19:46:03,612 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 19:46:03,612 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 19:46:03,612 [Worker-448: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:10:25,623 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:10:25,623 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:10:25,624 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:10:25,625 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:10:25,635 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:10:25,635 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:10:25,636 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:10:45,819 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:10:45,819 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:10:45,819 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:10:45,820 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:10:45,835 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:10:45,835 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:10:45,835 [Worker-459: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:12:49,375 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:12:49,375 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:12:49,376 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:12:49,377 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:12:49,380 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:12:49,380 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:12:49,380 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:13:31,371 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:13:31,371 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:13:31,372 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:13:31,373 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:13:31,376 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:13:31,377 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:13:31,377 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:14:19,676 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:14:19,676 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:14:19,677 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:14:19,677 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:14:19,679 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:14:19,679 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:14:19,679 [Worker-462: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:15:27,272 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:15:27,273 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:15:27,273 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:15:27,274 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:15:27,284 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:15:27,285 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:15:27,285 [Worker-456: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:15:54,839 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:15:54,840 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:15:54,842 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:15:54,842 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:15:54,854 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:15:54,854 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:15:54,854 [Worker-461: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:17:17,025 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:17:17,025 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:17:17,026 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:17:17,027 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:17:17,041 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:17:17,041 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:17:17,042 [Worker-465: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:19:18,287 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:19:18,288 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:19:18,288 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:19:18,289 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:19:18,301 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:19:18,301 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:19:18,301 [Worker-460: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:19:29,797 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:19:29,797 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:19:29,798 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:19:29,799 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:19:29,811 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:19:29,811 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:19:29,811 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:20:14,222 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:20:14,223 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:20:14,224 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:20:14,225 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:20:14,240 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:20:14,240 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:20:14,240 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:20:50,964 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:20:50,964 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:20:50,965 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:20:50,965 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:20:50,977 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:20:50,977 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:20:50,977 [Worker-464: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:21:40,094 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:21:40,095 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:21:40,095 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:21:40,096 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:21:40,107 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:21:40,107 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:21:40,107 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:22:28,971 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:22:28,972 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:22:28,972 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:22:28,974 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:22:28,984 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:22:28,984 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:22:28,984 [Worker-466: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:25:49,033 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:25:49,034 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:25:49,035 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:25:49,036 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:25:49,052 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:25:49,053 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:25:49,053 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:26:04,774 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:26:04,774 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:26:04,775 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:26:04,776 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:26:04,790 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:26:04,790 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:26:04,790 [Worker-467: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:30:14,674 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:30:14,675 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:30:14,676 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:30:14,677 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:30:14,694 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:30:14,694 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:30:14,695 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:30:31,322 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:30:31,323 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:30:31,323 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:30:31,324 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-29 20:30:31,335 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:30:31,335 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:30:31,336 [Worker-469: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-29 20:31:28,658 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-29 20:31:28,659 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-29 20:31:28,660 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-29 20:31:28,660 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource

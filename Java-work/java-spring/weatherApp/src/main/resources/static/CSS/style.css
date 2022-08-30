@@ -58,9 +58,9 @@ body{
 .container-results{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 5px;
     background-color: lightcyan;
     border-radius: 15px;
     width: 58rem;
@@ -70,6 +70,43 @@ body{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
+}
+.head{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.img-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+.main{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.right{
+    font-size: 2.8rem;
+    margin-right: 40px;
+    text-align: center;
+}
+.high-low{
+    font-size: 1.1rem;
+    font-weight:500;
+}
+.weather-icon{
+    height: 125px;
+}
+.city-name{
+    font-size: 2.8rem;
 }
 .go-back{
     display: flex;
@@ -88,7 +125,7 @@ body{
 }
 
 h2, h1{
-    color: thistle;
+    color: black;
 }
 
 p{

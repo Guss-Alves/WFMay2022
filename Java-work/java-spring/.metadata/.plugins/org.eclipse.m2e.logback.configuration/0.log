@@ -10345,3 +10345,10 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2022-08-30 20:16:11,437 [Worker-602: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-30 20:16:11,438 [Worker-602: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-08-30 20:16:11,438 [Worker-602: Launching weatherApp - WeatherAppApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources
+2022-08-30 20:19:51,760 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-30 20:19:51,760 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-30 20:19:51,763 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-30 20:19:51,815 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-30 20:19:51,818 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-30 20:19:51,818 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-08-30 20:19:51,819 [Worker-601: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\14154\OneDrive\Documents\Coding-Dojo\Java-work\java-spring\weatherApp\src\test\resources

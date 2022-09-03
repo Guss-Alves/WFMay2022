@@ -1,6 +1,14 @@
 package com.weatherapp.controller;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+
+import java.time.ZoneId;
+
+import java.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,6 +48,29 @@ public class HomeController {
 			
 			JSONObject mainObj = resultsObj.getJSONObject("main");
 			JSONObject sysObj = resultsObj.getJSONObject("sys");
+			
+			//convert the timestamp to date
+			String sunriseTime = sysObj.getString("sunrise");
+			
+			long num=Long.parseLong(sunriseTime);
+			String date=LocalDateTime.ofInstant(
+					Instant.ofEpochSecond(Long.valueOf(num)), ZoneId.systemDefault()
+					).format(DateTimeFormatter.ofPattern("h:mm a"));
+//					System.out.println(date);
+//					System.out.println(sunriseTime);
+			
+//			System.out.println(sunrise);
+			String sunsetTime = sysObj.getString("sunset");
+			
+			long num2=Long.parseLong(sunsetTime);
+			String date2=LocalDateTime.ofInstant(
+					Instant.ofEpochSecond(Long.valueOf(num2)), ZoneId.systemDefault()
+					).format(DateTimeFormatter.ofPattern("h:mm a"));
+//					System.out.println(date2);
+//					System.out.println(sunsetTime);
+			
+			
+			
 			JSONObject windObj = resultsObj.getJSONObject("wind");
 			
 			JSONArray resultsArray = resultsObj.getJSONArray("weather");
@@ -55,6 +86,8 @@ public class HomeController {
 			model.addAttribute("windObj", windObj);
 			model.addAttribute("results", results);
 			model.addAttribute("resultsObj", resultsObj);
+			model.addAttribute("date", date);
+			model.addAttribute("date2", date2);
 			
 			return "Results.jsp";
 			

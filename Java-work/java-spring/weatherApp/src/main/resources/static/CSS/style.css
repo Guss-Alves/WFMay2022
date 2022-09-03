@@ -55,13 +55,29 @@ body{
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
 }
+.go-back{
+    display: flex;
+    /* background-color:steelblue; */
+}
+.arrow-container{
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 50px;
+    background-color: thistle;
+}
+.arrow-img{
+    height: 43px;
+    cursor: pointer;
+}
+
 .container-results{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    padding: 5px;
-    background-color: lightcyan;
+    padding: 10px;
+    background-color:thistle;
     border-radius: 15px;
     width: 58rem;
     position: absolute;
@@ -98,8 +114,8 @@ body{
     margin-right: 40px;
     text-align: center;
 }
-.high-low{
-    font-size: 1.1rem;
+.span-style{
+    font-size: 1.2rem;
     font-weight:500;
 }
 .weather-icon{
@@ -108,26 +124,30 @@ body{
 .city-name{
     font-size: 2.8rem;
 }
-.go-back{
+.container-body{
     display: flex;
-    /* background-color:steelblue; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.arrow-container{
-    border: 4px solid black;
-    border-radius: 50%;
-    padding: 6px;
-    margin: 50px;
-    background-color: thistle;
+.container-time{
+    display: flex;
+    justify-content: space-around;
 }
-.arrow-img{
-    height: 43px;
-    cursor: pointer;
+.sunrise-icon{
+    height: 145px;
+}
+.sunset-icon{
+    height: 155px;
+}
+.sunrise, .sunset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2, h1{
     color: black;
 }
 
-p{
-    color: thistle;
-}

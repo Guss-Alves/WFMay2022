@@ -7,6 +7,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!-- for rendering errors on PUT routes -->
 <%@ page isErrorPage="true" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,20 +36,37 @@
             </div>
             <div class="right">
                 <span><c:out value="${mainObj.getString('temp')}" />°F</span><br>
-                <span class="high-low">H: <c:out value="${mainObj.getString('temp_max')}" />°F</span>
-                <span class="high-low">L: <c:out value="${mainObj.getString('temp_min')}" />°F</span>
+                <span class="span-style">H: <c:out value="${mainObj.getString('temp_max')}" />°F</span>
+                <span class="span-style">L: <c:out value="${mainObj.getString('temp_min')}" />°F</span>
             </div>
         </div>
         <hr>
+        <div class="container-body">
+            <h2>Feels like:</h2>
+            <span class="span-style"><c:out value="${mainObj.getString('feels_like')}" />°F</span>
+
+            <h2>Weather Description:</h2>
             <c:forEach var="climate" items="${ results }">
-                <p>
-                    description : ${climate.getString("description")}	
-                </p>
+                <span class="span-style">${climate.getString("description")}	</span>
             </c:forEach>
-            <p>wind speed: <c:out value="${windObj.getString('speed')}" /> </p>
-        <div class="sun-time">
-            <p>sunrise time: <c:out value="${sysObj.getString('sunrise')}" /> </p>
-            <p>sunset time: <c:out value="${sysObj.getString('sunset')}" /> </p>
+
+            <h2>wind speed:</h2>
+            <span class="span-style"><c:out value="${windObj.getString('speed')}"/> mph</span>
+        </div>
+        <div class="container-time">
+            <div class="sunrise">
+                <h3 >Sunrise</h3 >
+                <img class="sunrise-icon" src="https://cdn-icons-png.flaticon.com/512/1146/1146885.png" alt="sunrise icon">
+
+                <span class="span-style"><c:out value="${date}" /></span>
+                
+            </div>
+            <div class="sunset">
+                <h3 >Sunset</h3 >
+                <img class="sunset-icon" src="https://cdn.dribbble.com/users/1966282/screenshots/6664560/sunset_icon.png?compress=1&resize=400x300&vertical=top" alt="sunset icon">
+
+                <span class="span-style"><c:out value="${date2}" /></span>
+            </div>
         </div>
     </div>
 </body>

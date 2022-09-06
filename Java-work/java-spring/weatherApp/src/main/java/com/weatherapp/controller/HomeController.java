@@ -34,9 +34,7 @@ public class HomeController {
 	@GetMapping("/search")
 	public String search(@RequestParam("query")String searchQuery, Model model) {
 		//check if there is any errors
-//		  if (error.hasErrors()) {
-//			  return "redirect:/";
-//		  }		
+		
 		
 		//make an api call using the searchQuery
 		String searchComplete = searchQuery.replace(" ", "+");

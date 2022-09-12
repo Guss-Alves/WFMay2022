@@ -1,2 +1,0 @@
-module zoo_keeper {
-}

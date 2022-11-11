@@ -13,3 +13,5 @@ var longestCommonPrefix = function (strs) {
 array = ["flower","flow","flight"]
 
 console.log(longestCommonPrefix(array));
+
+// level easy of algo

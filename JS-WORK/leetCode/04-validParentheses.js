@@ -18,3 +18,5 @@ var isValid = function(s) {
     return (!result.length);
 };
 console.log(isValid(""))
+
+// Use of Object

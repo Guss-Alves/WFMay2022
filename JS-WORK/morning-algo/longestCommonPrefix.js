@@ -5,7 +5,7 @@ output = "fl";
 array2 = ["flower", "dog"]
 //or empty string = "";
 
-//GO OVER TO UNDERSTAND WHATS HAPPPENING HERE
+//GO OVER TO UNDERSTAND WHATS HAPPPENING HERE (should be level easys)
 const commonPrefix = (strs) => {
     let prefix = "";
     if (strs.length == 0){

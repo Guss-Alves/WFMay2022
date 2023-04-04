@@ -1,6 +1,6 @@
 
 //example 1
-nums = [1, 1, 2];
+nums1 = [1, 1, 2];
 // output = 2 which is the number of elements present in the array , nums = [ 1, 2 ];
 
 //exemple 2
@@ -29,11 +29,23 @@ const noDuplicates = (arr)=>{
     console.log(k);
     return arr;
 }
-console.log(noDuplicates(nums3));
-
-
+console.log(noDuplicates(nums2));
 
 
 // const newnums = nums.splice(2, 1);
 // console.log(newnums);
 // console.log(nums);
+
+//YT solution below 
+
+var removeDuplicates = function(nums){
+    let index = 1;
+    for(let i = 0; i < nums.length - 1; i++){
+        if(nums[i] !== nums[i+1]){
+            nums[index] = nums[i+1];
+            index++
+        }
+    }
+    return index;
+}
+console.log(removeDuplicates(nums2))

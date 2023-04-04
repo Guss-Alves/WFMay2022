@@ -18,7 +18,7 @@ const noDuplicates = (arr)=>{
         for(let j = i + 1; j < arr.length; j++){
             //check if the current index is the same as the one in front of it
             if(arr[i] === arr[j]){
-                //if they are the same remove the index + 1 from the main array
+                //if they are the same remove the i from the main array
                 arr.splice(i, 1);
                 i--;
             }

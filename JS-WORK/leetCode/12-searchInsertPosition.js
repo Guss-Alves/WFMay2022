@@ -2,7 +2,7 @@
 
 //example 1
 let nums1 = [1,3,5,6]; 
-let target1 = 7;
+let target1 = 5;
 // Output: 2
 
 //example 2
@@ -15,12 +15,16 @@ let nums3 = [1,3,5,6];
 let target3 = 7;
 // Output: 4
 
-//example 4
-// let nums4 = [3,6,7,8,10]; 
-// let target4 = 5;
-// Output: 0
-
-
+//Better solution from internet that covers every case
+const searchInsertBetter = (nums, target)=>{
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] >= target){
+            return i;
+        }
+    }
+    return nums.length;
+}
+console.log(searchInsertBetter(nums3, target3));
 
 
 //solution found by me, it covers the test cases, but it's not a final solution bc it doesn't cover every possible case
@@ -48,4 +52,4 @@ const searchInsert = (nums, target)=>{
     }
 }
 
-console.log(searchInsert(nums1, target1));
+// console.log(searchInsert(nums1, target1));

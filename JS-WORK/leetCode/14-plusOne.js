@@ -22,15 +22,20 @@ Thus, the result should be [1,0].
 */
 let digits1 = [1,2,3];
 let digits2 = [4,3,2,1];
-let digits3 = [9];
+let digits3 = [9, 9];
+let digits4 = [2, 5, 6, 9];
 
 const plusOne = (digits)=>{
-    for(let i = 0; i < digits.length; i++){
-        if(i === digits.length - 1){
-            digits[i] += 1;
+    for(let i = digits.length - 1; i >= 0; i--){
+        if(digits[i] < 9){
+            digits[i]+= 1;
+            return digits;
+        }else{
+            digits[i] = 0;
         }
     }
+    digits.unshift(1);
     return digits;
 }
 
-console.log(plusOne(digits2));
+console.log(plusOne(digits3));

@@ -18,11 +18,12 @@ let nums2 = [1,3,2,1]
 
 //The goal is create a variable called "ans" which will repeat 2 time whatever have inside the array nums
 var getConcatenation = function(nums) {
-    primeLength = nums.length;
+    // we can create a var called primeLengh to save the original length of the array so it doesn't create an infinite loop;
+    let primeLength = nums.length;
     for(let i = 0; i < primeLength; i++){
         nums.push(nums[i]);
     }
     let ans = nums;
     return ans;
 };
-console.log(getConcatenation(nums2));
+console.log(getConcatenation(nums1));

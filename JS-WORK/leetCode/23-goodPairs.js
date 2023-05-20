@@ -38,7 +38,7 @@ var numIdenticalPairs = function(nums) {
         else{
             j++;
         }
-        //when j gets to the final of the array, we want increse i and set j again to i + 1
+        //when j gets to the end of the array, we want increse i and set j again to i + 1
         if(j >= nums.length){
             i++;
             j = i + 1;

@@ -21,6 +21,7 @@ let account2 = [[2,8,7],[7,1,3],[1,9,5]]
 // Output: 17
 
 //our goal is to iterate through all the arrays, sum their values, and decide which one is the biggest
+//THIS ONE WORKS, AND i CAME IP WITH NY MYSELF
 var maximumWealth = function(accounts) {
     //we need a var called costumers where we will push the biggest value of each array
     let costumers = [];
@@ -45,4 +46,26 @@ var maximumWealth = function(accounts) {
     output = costumers[costumers.length-1];
     return output
 };
-console.log(maximumWealth(account2));
+// console.log(maximumWealth(account2));
+
+//here is a better version, because there is no need for a 3rd for loop
+var betterMaximumWealth = function(accounts) {
+    //we nned a var called highestValue, to keep track of the highest one
+    let highestValue = 0;
+    //we need to iterate through the array with i
+    for(let i = 0; i < accounts.length; i++){
+        //we need a var to keep track of the values
+        let money = 0;
+        //we will need a double loop where j will go through the array and sum the values and push to costumer
+        for(let j = 0; j < accounts[i].length; j++){
+            money += accounts[i][j];
+        }
+        // here we will just get the value of money and compare with highestValue
+        //if its bigger we set highestValue to be equal to money
+        if(highestValue < money){
+            highestValue = money;
+        }
+    }
+    return highestValue;
+};
+console.log(betterMaximumWealth(account1));

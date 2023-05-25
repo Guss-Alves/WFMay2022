@@ -50,4 +50,24 @@ var longestCommonPrefix = function (strs) {
         
     }
 };
-console.log(longestCommonPrefix(strs1));
+// console.log(longestCommonPrefix(strs1));
+
+
+let strs3 = ["flower", "flow", "flight"];
+let strs4 = ["dog", "racecar", "car"];
+//here is the way of solve with for loops
+const longestPrefix = (word)=>{
+    let prefix = "";
+    for(let i = 0; i < word[0].length; i++){
+        let characters = word[0][i];
+        for(let j = 1; j < word.length; j++){
+            if(word[j][i] !== characters){
+                return prefix
+            }
+        }
+        prefix += characters;
+    }
+    return prefix;
+}
+
+console.log(longestPrefix(strs3));

@@ -12,8 +12,8 @@ let height1 = [1,8,6,2,5,4,8,3,7];
             // l               r
 let height2 = [1,1];
 
-//
-var maxArea = function(height) {
+//this one I came up with after some explanation, but is not efficient
+var maxArea1 = function(height) {
     let maxVolume = 0;
     for(let i = 0; i < height.length; i++){
         for(let j = height.length - 1; j > 0; j--){
@@ -26,5 +26,28 @@ var maxArea = function(height) {
     }
 }
 return maxVolume;
+};
+// console.log(maxArea1(height1));
+
+//better version
+var maxArea = function(height) {
+    let left = 0;
+    let right = height.length -1;
+    let maxima = 0;
+
+    while(left < right){
+        let width = Math.abs(left - right);
+        let maxArea = Math.min(height[left], height[right]) * width;
+
+        if( maxima < maxArea){
+            maxima = maxArea;
+        }
+        if(height[left] < height[right]){
+            left++;
+        }else{
+            right--;
+        }
+    }
+    return maxima;
 };
 console.log(maxArea(height1));

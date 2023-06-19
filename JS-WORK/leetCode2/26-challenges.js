@@ -1,4 +1,5 @@
-//check if 2 nums sum si 100, or if one of them is 100
+//check if 2 nums sum to 100, or if one of them is 100
+//could have done in less lines if I had used the || operator
 
 const is100 = (x, y)=>{
 

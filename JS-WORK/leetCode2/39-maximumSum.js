@@ -25,7 +25,7 @@ let nums1 = [4,4,9,10,10,9,3,8,4,2,5,3,8,6,1,10,4,5,3,2,3,9,5,7,10,4,9,10,1,10,4
 let nums2 = [5,5,5]; let k2 = 2;
 //Output: 11
 
-
+//we had troble bc we were not sure if the arrays were already sorted or not, once we take care of that, we just needed to do what we had in mind at first
 var maximizeSum = function(nums, k) {
 //first lets sort the array
 for(let i = 0; i < nums.length; i++){
@@ -36,9 +36,10 @@ for(let i = 0; i < nums.length; i++){
     }
 }
 //now we can get the sorted array and make the sum
-//and create var output;
+//and create var output, it already starts being equal to the biggest value in the array;
 let output = nums[nums.length - 1];
 for(let x = 1; x < k; x++){
+    //then we just need to add 1 to the previous value, and keep adding to output as long as x is less tha k;
     nums[nums.length - 1] = nums[nums.length - 1] + 1;
     output+= nums[nums.length - 1];
 }

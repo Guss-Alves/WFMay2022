@@ -27,6 +27,7 @@ let nums2 = [1,3]; let k2 = 3; ////Output: 0
 let nums3 = [3,2,1,5,4]; let k3 = 2; ////Output: 3
 
 //In this challenge we want to check how many pairs with an abasolute difference of k we have in an array
+//could also think in a way not using the Math.abs() method
 var countKDifference = function(nums, k) {
     // console.log(Math.abs(nums[0] - nums[1]));
 //we will have a var count, starting at 0 to keep track of the pairs

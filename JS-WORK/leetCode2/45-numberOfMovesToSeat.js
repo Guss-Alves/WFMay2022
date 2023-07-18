@@ -15,6 +15,18 @@ Output: 7
 // let seats1 = [3,1,5]; let students1 = [2,7,4];
 let seats1 = [3,1,5]; let students1 = [2,7,4];
 
+//THE WAY BELOW I CAME UP WITH AND WORKS JUST FINE, BUT THERE IS A SMARTER WAY, WITH LESS LINES AND FASTER
+var minMovesToSeat2 = function(seats, students) {
+    let count = 0
+    seats.sort((a, b) => a - b);
+    students.sort((a, b) => a - b);
+    for(let i = 0; i < seats.length; i++){
+        let diferrence = Math.abs(seats[i] - students[i]);
+            count+= diferrence;
+    }
+    return count;
+};
+
 var minMovesToSeat = function(seats, students) {
     //the idea is to make the min amount of moves, the easiest way to do that is first sort both arrays in increase order
     //we can start by sorting the arrays, using the sort() methoad, for simpliticy

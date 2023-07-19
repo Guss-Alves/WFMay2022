@@ -11,6 +11,7 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob
 let names1 = ["Mary","John","Emma"]; //["Mary","Emma","John"]
 let heights1 = [180,165,170];
 
+//so to precisando msm ganhar tempo, also, seria bom ver outra solucao pra esse algo, esse e bem devagar
 var sortPeople = function(names, heights) {
     //the idea is to make a bubble sort with the heights array, and make the differences on both arrays
     //if one height value moves, the same name will move too

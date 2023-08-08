@@ -22,7 +22,7 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
 let image1 = [[1,1,0],[1,0,1],[0,0,0]]; //[[1,0,0],[0,1,0],[1,1,1]]
 let image2 = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]] //[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
-
+//see that after trip
 var flipAndInvertImage = function(image) {
     for(let i = 0; i < image.length; i++){
         image[i].reverse();

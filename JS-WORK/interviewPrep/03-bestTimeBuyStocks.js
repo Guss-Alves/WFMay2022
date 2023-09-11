@@ -42,6 +42,7 @@ console.log(maxProfit(prices2));
 let prices3 = [7,1,5,3,6,4]; //5
 
 // this solution its faster therefore its better practice bc it gets aways with 1 loop
+//good thing to keep in mind, that in a few cases instead of a double loop you can keep track of 2 values just with a variable 
 var secondMaxProfit = function(prices) {
     let maxProfit = 0;
     let minPrice = prices[0];

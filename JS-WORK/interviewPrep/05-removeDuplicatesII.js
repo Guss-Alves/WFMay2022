@@ -69,7 +69,7 @@ var removeDuplicates = function(nums) {
 };
 console.log(removeDuplicates(nums2));
 
-
+//this one I came up on my on, but it didnt cover all cases so it would need to be fixed
 // var removeDuplicates = function(nums) {
 //     let k = 0
 //     // console.log(nums);

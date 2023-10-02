@@ -22,7 +22,7 @@ const sumValuesInArrayOfObjects1 = (arrayOfObjects, key) => {
 
 
 
-//cal
+
 const sumValuesInArrayOfObjects = (arr) => {
     // Check if the input is an array and not empty
     if (!Array.isArray(arr) || arr.length === 0) {

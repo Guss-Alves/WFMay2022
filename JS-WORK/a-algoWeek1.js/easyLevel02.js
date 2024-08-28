@@ -1,7 +1,5 @@
 
 
-//tempI = 
-//tempJ = 
 //  i          j
 // [1, 3, 5], [2, 4, 6]
 // Expected Output: [1, 2, 3, 4, 5, 6]
@@ -61,6 +59,40 @@ const removeDuplicates = arr => {
 };
 
 // Test cases
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected Output: [1, 2, 3, 4, 5]
-console.log(removeDuplicates([1, 1, 1, 1, 1])); // Expected Output: [1]
-console.log(removeDuplicates([3, 5, 3, 7, 8, 5])); // Expected Output: [3, 5, 7, 8]
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected Output: [1, 2, 3, 4, 5]
+// console.log(removeDuplicates([1, 1, 1, 1, 1])); // Expected Output: [1]
+// console.log(removeDuplicates([3, 5, 3, 7, 8, 5])); // Expected Output: [3, 5, 7, 8]
+
+const isValidParentheses = (s) => {
+    //create an array to keep track of the used brakets in the string
+    let braketsTracker = [];
+    //create an object for the logic of a braket have a correct pair
+    let pairs = {
+        '(' : ')',
+        '{' : '}',
+        '[' : ']',
+    }
+    //iterate through the string
+    for(let i = 0; i < s.length; i++){
+        let current = s[i];
+        if(pairs[current]){
+            braketsTracker.push(current);
+        }else{
+            let removedElement = braketsTracker.pop();
+            // console.log(removedElement);
+            if(pairs[removedElement] !== current){
+                return false;
+            }
+        }
+    }
+    if(braketsTracker.length === 0) return true;
+};
+
+
+
+// Examples and Expected Outputs
+console.log(isValidParentheses("()"));        // true
+console.log(isValidParentheses("()[]{}"));    // true
+console.log(isValidParentheses("(]"));        // false
+console.log(isValidParentheses("([)]"));      // false
+console.log(isValidParentheses("{[]}"));      // true

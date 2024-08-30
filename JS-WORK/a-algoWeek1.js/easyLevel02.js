@@ -95,21 +95,35 @@ const isValidParentheses = (s) => {
 // console.log(isValidParentheses("{[]}"));      // true
 
 
+
+//MY SOLUTION
+// const twoSum = (nums, target) => {
+//     // Your code here
+//     let output = [];
+//     for(let i = 0; i < nums.length; i++){
+//         for(let j = i + 1; j < nums.length; j++){
+//             if(nums[i] + nums[j] == target){
+//                 output.push(i,j);
+//             }
+//         }
+//     }
+//     return output;
+// };
+
+//better solution 
 const twoSum = (nums, target) => {
-    // Your code here
-    let output = [];
-    for(let i = 0; i < nums.length; i++){
-        for(let j = i + 1; j < nums.length; j++){
-            if(nums[i] + nums[j] == target){
-                output.push(i,j);
-            }
+    let map = {}; // Initialize an empty hash map
+    for (let i = 0; i < nums.length; i++) { // Loop through the array
+        let complement = target - nums[i]; // Calculate the complement
+        if (map[complement] !== undefined) { // Check if the complement is in the map
+            return [map[complement], i]; // Return the indices if found
         }
+        map[nums[i]] = i; // Store the current number and its index in the map
     }
-    return output;
+    return map;
 };
 
 // Example calls:
 console.log(twoSum([2, 7, 11, 15], 9)); // Expected output: [0, 1]
 console.log(twoSum([3, 2, 4], 6));      // Expected output: [1, 2]
 console.log(twoSum([3, 3], 6));         // Expected output: [0, 1]
-

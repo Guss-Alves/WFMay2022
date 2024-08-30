@@ -87,12 +87,29 @@ const isValidParentheses = (s) => {
     }
     if(braketsTracker.length === 0) return true;
 };
-
-
-
 // Examples and Expected Outputs
-console.log(isValidParentheses("()"));        // true
-console.log(isValidParentheses("()[]{}"));    // true
-console.log(isValidParentheses("(]"));        // false
-console.log(isValidParentheses("([)]"));      // false
-console.log(isValidParentheses("{[]}"));      // true
+// console.log(isValidParentheses("()"));        // true
+// console.log(isValidParentheses("()[]{}"));    // true
+// console.log(isValidParentheses("(]"));        // false
+// console.log(isValidParentheses("([)]"));      // false
+// console.log(isValidParentheses("{[]}"));      // true
+
+
+const twoSum = (nums, target) => {
+    // Your code here
+    let output = [];
+    for(let i = 0; i < nums.length; i++){
+        for(let j = i + 1; j < nums.length; j++){
+            if(nums[i] + nums[j] == target){
+                output.push(i,j);
+            }
+        }
+    }
+    return output;
+};
+
+// Example calls:
+console.log(twoSum([2, 7, 11, 15], 9)); // Expected output: [0, 1]
+console.log(twoSum([3, 2, 4], 6));      // Expected output: [1, 2]
+console.log(twoSum([3, 3], 6));         // Expected output: [0, 1]
+

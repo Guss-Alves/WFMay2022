@@ -124,6 +124,35 @@ const twoSum = (nums, target) => {
 };
 
 // Example calls:
-console.log(twoSum([2, 7, 11, 15], 9)); // Expected output: [0, 1]
-console.log(twoSum([3, 2, 4], 6));      // Expected output: [1, 2]
-console.log(twoSum([3, 3], 6));         // Expected output: [0, 1]
+// console.log(twoSum([2, 7, 11, 15], 9)); // Expected output: [0, 1]
+// console.log(twoSum([3, 2, 4], 6));      // Expected output: [1, 2]
+// console.log(twoSum([3, 3], 6));         // Expected output: [0, 1]
+
+const lengthOfLongestSubstring = (s) => {
+    let seen = []; //we create an array to keep track of the characters that we've seen so far
+    let longestLength = 0; //we create a variable to keep track of the longest length
+    let startOfSub = 0; //we create a variable to know where to start to count for new sub strings
+
+    //we loop through s 
+    for(let end = 0; end < s.length; end++){
+        //when we find an character that is already in the array
+        while(seen.includes(s[end])){
+            seen.shift(); //we want to keep removing elements until we remove the duplicate
+            startOfSub++; //and increase the start to calculate the length
+        }
+        seen.push(s[end]);//here we going to keep adding the current element to the array
+        //here we know that we are not keeping duplicates in the array, and we can constently check if we get a larger length
+        if(longestLength < end - startOfSub +1){
+            longestLength = end - startOfSub + 1;
+        }
+        // console.log(longestLength);
+        // console.log(seen);
+    }
+    return longestLength;
+};
+
+// Example calls:
+console.log(lengthOfLongestSubstring("abcabcbb")); // Expected output: 3 ("abc")
+console.log(lengthOfLongestSubstring("bbbbb"));    // Expected output: 1 ("b")
+console.log(lengthOfLongestSubstring("pwwkew"));   // Expected output: 3 ("wke")
+console.log(lengthOfLongestSubstring(""));         // Expected output: 0 ("")

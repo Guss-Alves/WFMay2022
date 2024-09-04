@@ -152,7 +152,16 @@ const lengthOfLongestSubstring = (s) => {
 };
 
 // Example calls:
-console.log(lengthOfLongestSubstring("abcabcbb")); // Expected output: 3 ("abc")
-console.log(lengthOfLongestSubstring("bbbbb"));    // Expected output: 1 ("b")
-console.log(lengthOfLongestSubstring("pwwkew"));   // Expected output: 3 ("wke")
-console.log(lengthOfLongestSubstring(""));         // Expected output: 0 ("")
+// console.log(lengthOfLongestSubstring("abcabcbb")); // Expected output: 3 ("abc")
+// console.log(lengthOfLongestSubstring("bbbbb"));    // Expected output: 1 ("b")
+// console.log(lengthOfLongestSubstring("pwwkew"));   // Expected output: 3 ("wke")
+// console.log(lengthOfLongestSubstring(""));         // Expected output: 0 ("")
+
+//next challenge
+const mergeIntervals = (intervals) => {
+    // Your code here
+};
+
+// Example calls:
+console.log(mergeIntervals([[1,3],[2,6],[8,10],[15,18]])); // Expected output: [[1,6],[8,10],[15,18]]
+console.log(mergeIntervals([[1,4],[4,5]]));                // Expected output: [[1,5]]

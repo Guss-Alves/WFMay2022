@@ -159,9 +159,29 @@ const lengthOfLongestSubstring = (s) => {
 
 //next challenge
 const mergeIntervals = (intervals) => {
-    // Your code here
+    // Step 1: Sort the intervals by the starting points
+    intervals.sort((a, b) => a[0] - b[0]);
+
+    // Step 2: Initialize an empty array to hold merged intervals
+    let merged = [];
+
+    // Step 3: Loop through the intervals
+    for (let i = 0; i < intervals.length; i++) {
+        // If merged array is empty or current interval does not overlap with the last one in merged
+        if (merged.length === 0 || merged[merged.length - 1][1] < intervals[i][0]) {
+            // Push the current interval into the merged array
+            merged.push(intervals[i]);
+        } else {
+            // If intervals overlap, merge them by updating the end value
+            merged[merged.length - 1][1] = Math.max(merged[merged.length - 1][1], intervals[i][1]);
+        }
+    }
+
+    // Step 4: Return the merged intervals
+    return merged;
 };
 
 // Example calls:
-console.log(mergeIntervals([[1,3],[2,6],[8,10],[15,18]])); // Expected output: [[1,6],[8,10],[15,18]]
-console.log(mergeIntervals([[1,4],[4,5]]));                // Expected output: [[1,5]]
+console.log(mergeIntervals([[1, 3], [2, 6], [8, 10], [15, 18]])); // Output: [[1, 6], [8, 10], [15, 18]]
+console.log(mergeIntervals([[1, 4], [4, 5]]));                    // Output: [[1, 5]]
+

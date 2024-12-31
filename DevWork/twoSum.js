@@ -13,3 +13,17 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+const getRandom = () => {
+
+    let result = [];
+
+    for(let i = 0; i < 4; i++){
+        let spin = Math.floor(Math.random() * (100 - 27) + 27)
+        result.push(spin);
+
+    }
+        return result;
+}
+
+console.log(getRandom());

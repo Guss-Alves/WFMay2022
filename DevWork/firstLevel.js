@@ -15,7 +15,7 @@ if(s1[1] > s2[1]){
 //test cases
 
 // console.log(whichStock(stock1, stock2));
-//leetcode soon
+//leetcode soon starting from easy levels
 
 const oneTo100 = () => {
     for(let i = 0; i < 100; i++){

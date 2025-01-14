@@ -1,5 +1,6 @@
 let arr1 = [1,5,8,10,3];
 
+//probably not the most efficient approach
 var twoSum = function(nums, target) {
     //variable to store result
     let result = [];

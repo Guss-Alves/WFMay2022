@@ -13,7 +13,6 @@ var removeDuplicates = function(nums) {
         if(nums[i] == nums[j]){
         //if so, lets remove the element from the array, leaving only unique number
             nums.splice(j, 1);
-        //an move i and j forward
         }else{
             i++;
             j++;

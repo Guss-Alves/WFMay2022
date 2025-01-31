@@ -23,4 +23,7 @@ const oneTo100 = () => {
     }
 }
 
-console.log(oneTo100());
+// console.log(oneTo100());
+
+//algo 2.
+
